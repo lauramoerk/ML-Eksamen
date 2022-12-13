@@ -355,48 +355,4 @@
     /* } */
 
     /*Animations*/
-    @keyframes marquee {
-      0% {
-        margin-left: 100%;
-        transform: translateX(0%);
-      }
-      100% {
-        margin-left: 0;
-        transform: translateX(-100%);
-      }
-    }
-    
-    .sectionmarquee {
-      overflow: hidden;
-      }
-    
-    .marquee {
-        animation: marquee 7s linear infinite;
-        display: inline-block;
-        white-space: nowrap;
-    }
-    
-        .marquee:hover {
-          animation-play-state: paused;
-        }
-      
-    
-        .marquee2 {
-          animation: marquee 12s linear infinite;
-          display: inline-block;
-          white-space: nowrap;}
-      
-          .marquee:hover {
-            animation-play-state: paused;
-          }
-
-          .marquee3 {
-            animation: marquee 10.5s linear infinite;
-            display: inline-block;
-            white-space: nowrap;}
-        
-            .marquee:hover {
-              animation-play-state: paused;
-            }
-        
-    
+  
