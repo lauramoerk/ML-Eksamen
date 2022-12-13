@@ -37,6 +37,7 @@ module.exports = {
       "spot-sm": "12.8px",
       "spot-xs": "10.24px",
       "spot-xxs": "8.19px",
+      "spot-xxxs": "6.55px",
     },
 
     fontWeight: {
