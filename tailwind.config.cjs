@@ -98,11 +98,11 @@ module.exports = {
     },
 
     zIndex: {
-      "--z-index-level-4": "15",
-      "--z-index-level-3": "10",
-      "--z-index-level-2": "5",
-      "--z-index-level-1": "0",
-      "--z-index-level-negative": "-5",
+      "--spot-index-level-4": "15",
+      "--spot-index-level-3": "10",
+      "--spot-index-level-2": "5",
+      "--spot-index-level-1": "0",
+      "--spot-index-level-negative": "-5",
     },
 
     extend: {},
