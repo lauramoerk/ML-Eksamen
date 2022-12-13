@@ -5,57 +5,146 @@
 @import url("https://use.typekit.net/eue2tfn.css");
 
 @layer base {
+  .noisy::before {
+    content: "";
+    position: fixed;
+    left: -10rem;
+    z-index: -9;
+    top: -10rem;
+    width: calc(100% + 20rem);
+    height: calc(100% + 20rem);
+    background-color: #1E1E1E;
+    /* background-color: red; */
+    background-image: url(img/noise.png);
+    opacity: 0.15;
+    pointer-events: none;
+    /* animation: noise 1s steps(2) infinite; */
+  }
 
-    .link {
-        cursor: pointer;
-        position: relative;
-        white-space: nowrap;
-        color: #F9F9F9;
+  /* @-webkit-keyframes noise {
+    to {
+      transform: translate3d(-7rem, 0, 0);
     }
-    .link::before,
-    .link::after {
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        background: currentColor;
-        top: 100%;
-        left: 0;
-        pointer-events: none;
-    }
-    
-    .link::before {
-        content: '';
-        /* show by default */
+  } */
+
+  /* @keyframes noise {
+    0% {
+      transform: translate3d(0, 9rem, 0);
     }
 
-    .link::before {
-        transform-origin: 50% 100%;
-        transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
-        clip-path: polygon(0% 0%, 0% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%, 100% 100%, 100% 0%);
-        color: #F9F9F9;
+    10% {
+      transform: translate3d(-1rem, -4rem, 0);
     }
-    
-    .link:hover::before {
-        transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
-        clip-path: polygon(0% 0%, 0% 100%, 50% 100%, 50% 0, 50% 0, 50% 100%, 50% 100%, 0 100%, 100% 100%, 100% 0%);
-        color: #F9F9F9;
+
+    20% {
+      transform: translate3d(-8rem, 2rem, 0);
     }
-    
-    .link span {
-        display: inline-block;
-        transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
-        color: #F9F9F9;
+
+    30% {
+      transform: translate3d(9rem, -9rem, 0);
     }
-    
-    .link:hover span {
-        transform: translate3d(0, -2px, 0);
-        color: #F9F9F9;
+
+    40% {
+      transform: translate3d(-2rem, 7rem, 0);
     }
+
+    50% {
+      transform: translate3d(-9rem, -4rem, 0);
+    }
+
+    60% {
+      transform: translate3d(2rem, 6rem, 0);
+    }
+
+    70% {
+      transform: translate3d(7rem, -8rem, 0);
+    }
+
+    80% {
+      transform: translate3d(-9rem, 1rem, 0);
+    }
+
+    90% {
+      transform: translate3d(6rem, -5rem, 0);
+    }
+
+    to {
+      transform: translate3d(-7rem, 0, 0);
+    }
+  } */
+
+  .link {
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    color: #f9f9f9;
+  }
+  .link::before,
+  .link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .link::before {
+    content: "";
+    /* show by default */
+  }
+
+  .link::before {
+    transform-origin: 50% 100%;
+    transition: clip-path 0.3s, transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+    clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      0 100%,
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      0 100%,
+      100% 100%,
+      100% 0%
+    );
+    color: #f9f9f9;
+  }
+
+  .link:hover::before {
+    transform: translate3d(0, 2px, 0) scale3d(1.08, 3, 1);
+    clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      50% 100%,
+      50% 0,
+      50% 0,
+      50% 100%,
+      50% 100%,
+      0 100%,
+      100% 100%,
+      100% 0%
+    );
+    color: #f9f9f9;
+  }
+
+  .link span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.2, 1, 0.8, 1);
+    color: #f9f9f9;
+  }
+
+  .link:hover span {
+    transform: translate3d(0, -2px, 0);
+    color: #f9f9f9;
+  }
 }
 /* @layer base { */
 /* :root { */
-    /* colors */
-    /* --color-black: #1E1E1E;
+/* colors */
+/* --color-black: #1E1E1E;
     --color-soft-white: #F9F9F9;
     --color-dark-gray: #4F4F4F;
     --color-gray: #747474;
@@ -63,15 +152,15 @@
     --color-accent-1: #D5ABFF;
     --color-accent-2: #4EB364; */
 
-    /* font-family */
-    /* --font-family-display: dimensions, sans-serif;
+/* font-family */
+/* --font-family-display: dimensions, sans-serif;
     --font-family-aktiv-grotesk: aktiv-grotesk, sans-serif;
     --font-family-aktiv-grotesk-thin: aktiv-grotesk-thin, sans-serif;
     --font-family-aktiv-grotesk-condensed: aktiv-grotesk-condensed, sans-serif;
     --font-family-aktiv-grotesk-ex: 'aktiv-grotesk-extended', sans-serif; */
 
-    /* font-size */
-    /* --font-size-display: 186.3px;
+/* font-size */
+/* --font-size-display: 186.3px;
     --font-size-mega: 61px;
     --font-size-xxxl: 48.83px;
     --font-size-xxl: 39.06px;
@@ -83,20 +172,20 @@
     --font-size-xs: 10.24px;
     --font-size-xxs: 8.19px; */
 
-    /* font-weight */
-    /* --font-weight-regular: 400;
+/* font-weight */
+/* --font-weight-regular: 400;
     --font-weight-bold: 700;
     --font-weight-xbold: 800;
     --font-weight-black: 900; */
 
-    /* text transform */
-    /* --text-uppercase: uppercase; */
-    
-    /* line-height */
-    /* --line-height-body: 20.48px; */
+/* text transform */
+/* --text-uppercase: uppercase; */
 
-    /* spacing gap */
-    /* --spacing-gap-65: 65px;
+/* line-height */
+/* --line-height-body: 20.48px; */
+
+/* spacing gap */
+/* --spacing-gap-65: 65px;
     --spacing-gap-55: 55px;
     --spacing-gap-45: 45px;
     --spacing-gap-25: 25px;
@@ -105,8 +194,8 @@
     --spacing-gap-5: 5px;
     --spacing-gap-0: 0px; */
 
-        /* spacing margin */
-    /* --spacing-margin-120: 120px;
+/* spacing margin */
+/* --spacing-margin-120: 120px;
     --spacing-margin-110: 110px;
     --spacing-margin-100: 100px;
     --spacing-margin-60: 60px;
@@ -124,8 +213,8 @@
     --spacing-margin-5: 5px;
     --spacing-margin-0: 0px; */
 
-    /* spacing padding */
-    /* --spacing-padding-120: 120px;
+/* spacing padding */
+/* --spacing-padding-120: 120px;
     --spacing-padding-110: 110px;
     --spacing-padding-100: 100px;
     --spacing-padding-60: 60px;
@@ -142,25 +231,23 @@
     --spacing-padding-8: 8px;
     --spacing-padding-0: 0px; */
 
-    /* border */
-    /* --border-1: solid 1px var(--color-soft-white);
+/* border */
+/* --border-1: solid 1px var(--color-soft-white);
     --border-2: solid 2px var(--color-soft-white);
     --border-3: solid 3px var(--color-soft-white);
     --border-5: solid 5px var(--color-soft-white); */
 
 /* z-index */
-        /* --z-index-level-4: 15;
+/* --z-index-level-4: 15;
         --z-index-level-3: 10;
         --z-index-level-2: 5;
         --z-index-level-1: 0;
         --z-index-level-negative: -5; */
 
-    /* } */
+/* } */
 
-    
-
-    /* Desktop alias' */
-    /* .desktop-display {
+/* Desktop alias' */
+/* .desktop-display {
         font-family: --font-family-display;
         font-size: var(--font-size-display);
         font-weight: var(--font-weight-bold);
@@ -231,7 +318,7 @@
 
 
       /* mobile */
-      /* .mobile-display {
+/* .mobile-display {
         font-family: var(--font-family-display);
         font-size: var(--font-size-xxl);
         font-weight: var(--font-weight-bold);
@@ -295,8 +382,8 @@
         
       } */
 
-      /* knapper */
-      /* .knap-xxxl {
+/* knapper */
+/* .knap-xxxl {
         font-family: var(--font-family-aktiv-grotesk-ex);
         font-size: var(--font-size-xl);
         font-weight: var(--font-weight-xbold);
@@ -398,8 +485,8 @@
 
 
     */
-        
-    /* } */
+
+/* } */
 
     /*Animations*/
   
