@@ -3,16 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/eue2tfn.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="googlebot" content="noindex, nofollow" />
+    <title>SPOT festival</title>
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template E2022</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+  <body
+    class="bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
+  >
+    <header>
+      <nav></nav>
+    </header>
 
-    <script type="module" src="./main.js"></script>
+    <main></main>
+
+    <footer>
+      <div
+        class="flex flex-col border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60"
+      >
+        <div class="gap-gap-5 flex flex-col">
+          <h3>forbliv opdateret</h3>
+          <p class="desktop-body text-spot-xs font-spot-regular normal-case">
+            Tilmeld dig vores nyhedsbrev!
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-spot-gap-15 pt-spot-padding-25 md:flex-row"
+        >
+          <label class="text-spot-sm" for="email">Email</label>
+
+          <input
+            class="bg-spot-black text-spot-xxs text-spot-white"
+            type="email"
+            placeholder="Eksempel@minmail.dk"
+            id="email"
+            pattern=".+@globex\.com"
+            size="30"
+          />
+          <button
+            class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold"
+          >
+            Tilmeld
+          </button>
+        </div>
+      </div>
+      <div>
+        <h3>spot</h3>
+        <ul class="">
+          <li>forside</li>
+          <li>lineup</li>
+          <li>program</li>
+          <li>billetter</li>
+          <li>om spot</li>
+          <li>frivillige</li>
+          <li>ansøg</li>
+          <li>faq</li>
+          <li>spot+</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
