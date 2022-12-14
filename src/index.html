@@ -106,7 +106,7 @@
     </main>
     <footer class="bg-spot-black">
       <div
-        class="flex flex-col md:flex-row md:justify-between md:items-center border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60"
+        class="flex flex-col border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60 md:flex-row md:items-center md:justify-between"
       >
         <div class="gap-gap-5 flex flex-col">
           <h3>forbliv opdateret</h3>
@@ -115,129 +115,129 @@
           </p>
         </div>
         <section
-          class="flex flex-col gap-spot-gap-15 pt-spot-padding-25 md:flex-row md:pt-spot-padding-0 items-center"
+          class="flex flex-col items-center gap-spot-gap-15 pt-spot-padding-25 md:flex-row md:pt-spot-padding-0"
         >
-          
-            <label class="text-spot-sm" for="email">Email</label>
-  
-            <input
-              class="bg-spot-black text-spot-xs text-spot-white"
-              type="email"
-              placeholder="Eksempel@minmail.dk"
-              id="email"
-              pattern=".+@globex\.com"
-              size="30"
-            />
-            <button
-              class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
-            >
-              Tilmeld
-            </button>
-          
+          <label class="text-spot-sm" for="email">Email</label>
+
+          <input
+            class="bg-spot-black text-spot-xs text-spot-white"
+            type="email"
+            placeholder="Eksempel@minmail.dk"
+            id="email"
+            pattern=".+@globex\.com"
+            size="30"
+          />
+          <button
+            class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
+          >
+            Tilmeld
+          </button>
         </section>
       </div>
-      <section class="m-spot-margin-50">
-        <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">spot</h3>
-        <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
-          <li>
-            <a class="link" href="#"><span>forside</span></a>
-          </li>
-          <li>
-            <a class="link" href="lineup.html"><span>lineup</span></a>
-          </li>
-          <li>
-            <a class="link" href="program.html"><span>program</span></a>
-          </li>
-          <li>
-            <a class="link" href="billetter.html"><span>billetter</span></a>
-          </li>
-          <li>
-            <a class="link" href="om.html"><span>om spot</span></a>
-          </li>
-          <li>
-            <a class="link" href=""><span>frivillige</span></a>
-          </li>
-          <li>
-            <a class="link" href="ansog.html"><span>ansøg</span></a>
-          </li>
-          <li>
-            <a class="link" href="faq.html"><span>faq</span></a>
-          </li>
-          <li>
-            <a class="link" href="spotekstra.html"><span>spot+</span></a>
-          </li>
-        </ul>
-      </section>
-      <section class="m-spot-margin-50">
-        <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
-          adminstrativ
-        </h3>
-        <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
-          <li>
-            <a
-              class="link"
-              href="https://administrativt.spot-festival.dk/bestyrelse"
-              ><span>sektratariat</span></a
-            >
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://administrativt.spot-festival.dk/bestyrelse"
-              ><span>bestyrelse</span></a
-            >
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://administrativt.spot-festival.dk/m%C3%A5laftale"
-              ><span>målsætninger</span></a
-            >
-          </li>
-          <li>
-            <a
-              class="link"
-              href="https://administrativt.spot-festival.dk/vedt%C3%A6gter"
-              ><span>vedtægter</span></a
-            >
-          </li>
-        </ul>
-      </section>
-      <section class="m-spot-margin-50">
-        <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
-          privatlivspolitik
-        </h3>
-        <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
-          <li>
-            <a
-              class="link"
-              href="https://administrativt.spot-festival.dk/cookie-og-privatliv"
-              ><span>cookie- og privatliv</span></a
-            >
-          </li>
-        </ul>
-      </section>
-      <section class="m-spot-margin-50">
-        <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
-          social media
-        </h3>
-        <ul class="flex gap-spot-gap-10 text-spot-xs">
-          <li>
-            <a class="link" href=""><img src="" alt="" />facebook</a>
-          </li>
-          <li>
-            <a class="link" href=""><img src="" alt="" />youtube</a>
-          </li>
-          <li>
-            <a class="link" href=""><img src="" alt="" />instagram</a>
-          </li>
-        </ul>
-      </section>
-      <section class="flex content-center justify-center">
-        <a><img src="" alt="" />spot logo</a>
-      </section>
+      <div class="flex flex-col md:flex-row md: justify-evenly md:pt-spot-padding-40">
+        <section class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15">
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">spot</h3>
+          <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
+            <li>
+              <a class="link" href="#"><span>forside</span></a>
+            </li>
+            <li>
+              <a class="link" href="lineup.html"><span>lineup</span></a>
+            </li>
+            <li>
+              <a class="link" href="program.html"><span>program</span></a>
+            </li>
+            <li>
+              <a class="link" href="billetter.html"><span>billetter</span></a>
+            </li>
+            <li>
+              <a class="link" href="om.html"><span>om spot</span></a>
+            </li>
+            <li>
+              <a class="link" href=""><span>frivillige</span></a>
+            </li>
+            <li>
+              <a class="link" href="ansog.html"><span>ansøg</span></a>
+            </li>
+            <li>
+              <a class="link" href="faq.html"><span>faq</span></a>
+            </li>
+            <li>
+              <a class="link" href="spotekstra.html"><span>spot+</span></a>
+            </li>
+          </ul>
+        </section>
+        <section class="px-spot-margin-50 pt-spot-margin-35  md:p-spot-padding-15">
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
+            adminstrativ
+          </h3>
+          <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/bestyrelse"
+                ><span>sektratariat</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/bestyrelse"
+                ><span>bestyrelse</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/m%C3%A5laftale"
+                ><span>målsætninger</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/vedt%C3%A6gter"
+                ><span>vedtægter</span></a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="px-spot-margin-50 pt-spot-margin-35  md:p-spot-padding-15">
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
+            privatlivspolitik
+          </h3>
+          <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/cookie-og-privatliv"
+                ><span>cookie- og privatliv</span></a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="px-spot-margin-50 pt-spot-margin-35  md:p-spot-padding-15">
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
+            social media
+          </h3>
+          <ul class="flex gap-spot-gap-10 text-spot-xs items-center">
+            <li>
+              <a href=""><img src="img/svg/facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="img/svg/youtube.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""><img src="img/svg/instagram.svg" alt="" /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="flex content-center justify-center md:-order-3 md:p-spot-padding-15 pt-spot-padding-50 items-center">
+          <a><img class="w-52 h-auto" src="img/spot-logo-text.png" alt="SPOT logo" />spot logo</a>
+        </section>
+      </div>
       <section
-        class="mx-spot-margin-50 mt-spot-margin-50 mb-spot-margin-35 text-center text-spot-xxxs"
+        class="mx-spot-margin-50 mt-spot-margin-50 pb-spot-margin-35 text-center text-spot-xxxs"
       >
         <p>
           SPOT Festival ● Vester Alle 15 ● 8000 Aarhus C ● DK ●<br />
