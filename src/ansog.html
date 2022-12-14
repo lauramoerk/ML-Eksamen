@@ -50,9 +50,9 @@
       </div>
     </section>
     </main>
-    <footer>
+    <footer class="bg-spot-black">
       <div
-        class="flex flex-col border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60"
+        class="flex flex-col md:flex-row md:justify-between md:items-center border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60"
       >
         <div class="gap-gap-5 flex flex-col">
           <h3>forbliv opdateret</h3>
@@ -61,23 +61,25 @@
           </p>
         </div>
         <section
-          class="flex flex-col gap-spot-gap-15 pt-spot-padding-25 md:flex-row"
+          class="flex flex-col gap-spot-gap-15 pt-spot-padding-25 md:flex-row md:pt-spot-padding-0 items-center"
         >
-          <label class="text-spot-sm" for="email">Email</label>
-
-          <input
-            class="bg-spot-black text-spot-xs text-spot-white"
-            type="email"
-            placeholder="Eksempel@minmail.dk"
-            id="email"
-            pattern=".+@globex\.com"
-            size="30"
-          />
-          <button
-            class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
-          >
-            Tilmeld
-          </button>
+          
+            <label class="text-spot-sm" for="email">Email</label>
+  
+            <input
+              class="bg-spot-black text-spot-xs text-spot-white"
+              type="email"
+              placeholder="Eksempel@minmail.dk"
+              id="email"
+              pattern=".+@globex\.com"
+              size="30"
+            />
+            <button
+              class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
+            >
+              Tilmeld
+            </button>
+          
         </section>
       </div>
       <section class="m-spot-margin-50">
