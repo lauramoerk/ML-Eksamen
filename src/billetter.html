@@ -28,11 +28,11 @@
     <div class="navbar bg-spot-black text-spot-white text-spot-sm spot-padding-8 ">
     <div class="w-full">
   <div class="flex w-full justify-between">
-      <div class="dropdown ">
+      <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-44 bg-spot-black">
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow w-44 bg-spot-black">
           <li><a class="link no-underline ">lineup</a></li>
           <li><a class="link no-underline">program</a></li>
           <li><a class="link no-underline">billetter</a></li>
@@ -51,7 +51,7 @@
           <li><a class="link no-underline">Spot+</a></li>
         </ul>
       </div>
-      <a class="btn btn-ghost normal-case text-xl flex items-center justify-between gap-spot-gap-10 -order-3">
+      <a class="btn btn-ghost normal-case text-xl flex items-center justify-between gap-spot-gap-10 ">
         <img class="w-10" src="./img/logo-white.png" alt="spot logo">
         <h3 class="hidden md:block uppercase font-spot-aktiv-grotesk-ex">Spot Festival</h3>
       </a>
@@ -80,12 +80,41 @@
   </div>
 </header>
     <main>
-      <h1 class="text-center text-spot-display font-spot-display">Billetter</h1>
-      <section>
-        <div>
-          <p>Partout billet</p>
-        </div>
-      </section>
+      <h1 class="text-center text-spot-mega md:text-spot-display font-spot-display">Billetter</h1>
+      <a href="#">
+        <section class="flex border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 mt-spot-margin-35 justify-between">
+          <div class="">
+            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">Partout billet</p>
+            <div id="empty" ></div>
+            <p class="py-spot-padding-10 text-spot-md font-spot-black">715,-</p>
+          </div>
+          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+        </section>
+        <section class="flex border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 justify-between">
+          <div class="">
+            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">ungdom (u25)</p>
+            <div id="empty" ></div>
+            <p class="py-spot-padding-10 text-spot-md font-spot-black">udsolgt</p>
+          </div>
+          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+        </section>
+        <section class="flex border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 justify-between">
+          <div class="">
+            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">fredag</p>
+            <div id="empty" ></div>
+            <p class="py-spot-padding-10 text-spot-md font-spot-black">480,-</p>
+          </div>
+          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+        </section>
+        <section class="flex border-t-spot-2 border-b-spot-2 py-spot-padding-10 mx-spot-margin-25 justify-between">
+          <div class="">
+            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">lørdag</p>
+            <div id="empty" ></div>
+            <p class="py-spot-padding-10 text-spot-md font-spot-black">480,-</p>
+          </div>
+          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+        </section>
+      </a>
     </main>
     <footer class="bg-spot-black">
       <div
@@ -221,7 +250,7 @@
             </li>
             <li>
               <a href="https://www.youtube.com/@SPOTFestivaldk">
-                <img src="img/svg/youtube.svg" alt="" />youtube logo</a
+                <img src="img/svg/youtube.svg" alt="youtube logo" /></a
               >
             </li>
             <li>

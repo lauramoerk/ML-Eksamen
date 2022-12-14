@@ -21,6 +21,13 @@
     /* animation: noise 1s steps(2) infinite; */
   }
 
+  #empty {
+    content:" ";
+    height: 5px;
+    width: 40px;
+    background-color: #F9F9F9;
+  }
+
   /* @-webkit-keyframes noise {
     to {
       transform: translate3d(-7rem, 0, 0);
