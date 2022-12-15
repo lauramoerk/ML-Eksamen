@@ -107,7 +107,6 @@ module.exports = {
         "--spot-index-level-1": "0",
         "--spot-index-level-negative": "-5",
       },
-  
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("daisyui")],
