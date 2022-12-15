@@ -562,4 +562,35 @@ details {
     */
 
 /* } */
+.gradienttext{
+  font-size: 31.25px;
+  font-weight: bolder;
+-webkit-text-stroke: 0.5px #F9F9F9;
+}
 
+.gradienttext:hover{
+  
+  font-size: 31.25px;
+  font-weight: bolder;
+background: -webkit-linear-gradient( #D5ABFF,#4EB364);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lineuptext{
+  font-weight: bolder;
+  -webkit-text-fill-color: #D5ABFF;
+  text-shadow: 
+						3.5px 3.5px #1E1E1E,
+						4px 4px #F9F9F9;
+}
+
+@media screen and (max-width:768px) {
+  .lineuptext{
+    font-weight: bolder;
+    -webkit-text-fill-color: #D5ABFF;
+    text-shadow: 
+              1.5px 1.5px #1E1E1E,
+              2px 2px #F9F9F9;
+  }
+}
