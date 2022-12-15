@@ -212,9 +212,22 @@
     color: #f9f9f9;
   }
 
-details {
-  list-style: none;
-}
+
+
+  details > summary {
+      list-style-type: "+";
+  }
+  details[open] > summary {
+      list-style-type: "-";
+  }
+
+ 
+
+  
+  html {
+      scroll-behavior: smooth;
+    }
+
 
 /* @layer base { */
 /* :root { */
