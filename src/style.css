@@ -28,6 +28,15 @@
     background-color: #F9F9F9;
   }
 
+  header a:active {
+    background-color: #1E1E1E;
+  }
+
+  header a {
+    border-radius: none;
+  }
+  
+
   /* @-webkit-keyframes noise {
     to {
       transform: translate3d(-7rem, 0, 0);
@@ -126,6 +135,8 @@
              height: 2px;
        }
     }
+
+    
  
  
  .multi-range {
@@ -140,7 +151,6 @@
     }
        
      
- 
     
 
   
@@ -212,9 +222,22 @@
     color: #f9f9f9;
   }
 
-details {
-  list-style: none;
-}
+
+
+  details > summary {
+      list-style-type: "+";
+  }
+  details[open] > summary {
+      list-style-type: "-";
+  }
+
+ 
+
+  
+  html {
+      scroll-behavior: smooth;
+    }
+
 
 /* @layer base { */
 /* :root { */
