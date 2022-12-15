@@ -212,6 +212,10 @@
     color: #f9f9f9;
   }
 
+details {
+  list-style: none;
+}
+
 /* @layer base { */
 /* :root { */
 /* colors */
