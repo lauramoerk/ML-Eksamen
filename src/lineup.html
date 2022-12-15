@@ -10,8 +10,8 @@
         <link rel="stylesheet" href="style.css">
         <title>SPOT festival</title>
       </head>
-<body class="bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white">
-  <header>
+<body class="bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white relative">
+  <header class="relative w-full">
     <section class="flex flex-row justify-end pt-2 text-spot-sm gap-x-spot-gap-5 pr-spot-padding-8 pb-spot-padding-8 md:pt-spot-padding-8 border-b-2 border-spot-dark-gray items-center">
     <div class="bg-spot-black flex flex-row  md:border-spot-2 md:border-spot-white w-fit pr-spot-padding-8">
       <input class="bg-spot-black border-none h-6 hidden md:block "
@@ -78,9 +78,9 @@
     </div>
   </div>
 </header>
-<main class="">
-<section class="hidden md:block absolute left-0 top-0 -z--spot-index-level w-full">
-  <div class="grid grid-rows-8">
+<main class="relative">
+<section class="hidden md:block  relative">
+  <div class="grid grid-rows-8 absolute left-0 top-0 -z--spot-index-level w-full">
     <div class="flex flex-row justify-end pt-spot-padding-100 pr-spot-padding-25 ">
       <img class="w-48" src="img/stargreen.png" alt="green decorative star">
     </div>
@@ -109,7 +109,8 @@
 
   </div>
 </section>
-<section class="flex flex-col justify-center gap-spot-gap-45 items-center -z--spot-index-level-4 pb-spot-padding-100">
+<section class="relative">
+  <div class="flex flex-col justify-center gap-spot-gap-45 items-center -z--spot-index-level-4 pb-spot-padding-100">
   <h1 class="font-spot-display text-spot-mega text-center md:text-spot-display">Lineup</h1>
 
   <div class="bg-spot-black flex flex-row border-spot-2 border-spot-white w-fit py-spot-padding-8 pr-spot-padding-8">
@@ -180,7 +181,7 @@
 
 </ol>
 
-
+</div>
 </section>
 
 </main>
