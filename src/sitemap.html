@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="https://use.typekit.net/eue2tfn.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="googlebot" content="noindex, nofollow" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
     <title>SPOT festival</title>
   </head>
   <body
-    class="bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
+    class="noisy bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-    <header class="fixed w-full bg-spot-black ">
+    <header class="fixed -z--spot-index-level-3 w-full bg-spot-black">
       <section
         class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
@@ -60,7 +58,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="dropdown-content menu menu-compact rounded-none mt-3 w-44 bg-spot-black p-2 shadow"
+                class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
               >
                 <li>
                   <a href="lineup.html" class="link no-underline">lineup</a>
@@ -90,10 +88,12 @@
                   </a>
                   <ul class="bg-spot-black p-2">
                     <li>
-                      <a href="om.html" class="link no-underline">om spot</a>
+                      <a href="om.html" class="link no-underline">om Spot</a>
                     </li>
                     <li>
-                      <a href="nyheder.html" class="link no-underline">Nyheder</a>
+                      <a href="nyheder.html" class="link no-underline"
+                        >nyheder</a
+                      >
                     </li>
                     <li>
                       <a href="frivillig.html" class="link no-underline"
@@ -137,7 +137,7 @@
                 >billetter</a
               >
             </li>
-            <li tabindex="0">
+            <li class="underline" tabindex="0">
               <a href="om.html" class="p-0">
                 Om
                 <svg
@@ -152,7 +152,7 @@
                   />
                 </svg>
               </a>
-              <ul class="bg-spot-black p-2 rounded-none">
+              <ul class="bg-spot-black p-2">
                 <li>
                   <a href="om.html" class="link mb-2 p-0 no-underline"
                     >Om Spot</a
@@ -160,7 +160,7 @@
                 </li>
                 <li>
                   <a href="nyheder.html" class="link mb-2 p-0 no-underline"
-                    >Nyheder</a
+                    >nyheder</a
                   >
                 </li>
                 <li>
@@ -172,7 +172,9 @@
                   <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
                 </li>
                 <li>
-                  <a href="ansog.html" class="link mb-2 p-0 no-underline">Ansøg</a>
+                  <a href="ansog.html" class="link mb-2 p-0 no-underline"
+                    >Ansøg</a
+                  >
                 </li>
               </ul>
             </li>
@@ -181,123 +183,30 @@
         </div>
       </div>
     </header>
-
-    <main class="pt-spot-margin-100">
-      <div id="cookieboks"
-        class="fixed left-0 z-10 flex flex-col border-spot-5 border-spot-black bg-spot-white text-spot-black md:top-96 md:w-1/2 p-spot-padding-30"
-      >
-        <p class="normal-case">
-          SPOT-festival.dk bruger første- og tredjepartcookies til at forbedre
-          din brugeroplevelse, registrere trafik, kilder og performance samt til
-          at lave relevant, personaliseret marketing. Du kan få flere
-          oplysninger om cookies og dine muligheder for at styre dem i vores
-          <a href="#" class="text-spot-black underline"
-            >cookie- og persondatapolitik.</a
-          >
-        </p>
-        <div class="flex flex-col sm:flex-row my-spot-margin-35 gap-spot-gap-25 justify-evenly items-center">
-          <div class="mt-spot-margin-15 flex flex-col gap-spot-gap-15 ">
-            <label class="relative inline-flex cursor-pointer items-center">
-              <input type="checkbox" value="" class="peer sr-only" checked />
-              <div
-                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
-              ></div>
-              <span class="ml-3 text-sm font-spot-bold">nødvendige</span>
-            </label>
-            <label class="relative inline-flex cursor-pointer items-center">
-              <input type="checkbox" value="" class="peer sr-only" />
-              <div
-                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-spot-white after:bg-spot-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
-              ></div>
-              <span class="ml-3 text-sm font-spot-bold dark:text-gray-300"
-                >Præferencer</span
-              >
-            </label>
-            <label class="relative inline-flex cursor-pointer items-center">
-              <input type="checkbox" value="" class="peer sr-only" />
-              <div
-                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-spot-white after:bg-spot-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
-              ></div>
-              <span class="ml-3 text-sm font-spot-bold dark:text-gray-300"
-                >Statistik</span
-              >
-            </label>
-            <label class="relative inline-flex cursor-pointer items-center">
-              <input type="checkbox" value="" class="peer sr-only" />
-              <div
-                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-spot-white after:bg-spot-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
-              ></div>
-              <span class="ml-3 text-sm font-spot-bold dark:text-gray-300"
-                >marketing</span
-              >
-            </label>
-          </div>
-          <div class="flex flex-col gap-spot-gap-10">
-            <button id="tilladudvalgte"
-              class="w-fit self-center text-spot-xs border-spot-3 border-spot-black bg-spot-black py-spot-padding-10 px-spot-padding-20 font-spot-xbold uppercase hover:bg-spot-white hover:text-spot-black text-spot-white"
-            >
-              tillad alle
-            </button>
-            <button id="tilladalle"
-              class="w-fit self-center underlined border-b-spot-2 border-spot-black font-spot-xbold text-spot-xs pt-spot-padding-10 uppercase"
-            >
-              Tillad udvalgte
-            </button>
-          </div>
+    <main class="mx-spot-margin-50">
+      <section class="py-spot-margin-120">
+        <h1 class="font-spot-display text-spot-mega md:text-spot-display">
+          sitemap
+        </h1>
+        <div class="flex justify-center md:text-spot-lg">
+            <ul class="list-disc flex flex-col gap-spot-gap-25">
+              <li><a href="index.html">Forside</a></li>
+              <li><a href="lineup.html">lineup side</a></li>
+              <ul class="list-disc pl-spot-padding-20 md:pl-spot-padding-40">
+                <li><a href="artist.html">artist side</a></li>
+              </ul>
+              <li><a href="program.html">program side</a></li>
+              <li><a href="billetter.html">billetter side</a></li>
+              <li><a href="om.html">om spot side</a></li>
+              <ul class="list-disc pl-spot-padding-20 md:pl-spot-padding-40">
+                <li><a href="nyheder.html">Nyheder side</a></li>
+                <li><a href="frivillig.html">frivillig side</a></li>
+                <li><a href="faq.html">FAQ side</a></li>
+                <li><a href="ansog.html">ansøg side</a></li>
+              </ul>
+            </ul>
         </div>
-      </div>
-      <div
-        class="grid grid-rows-[25%,75%] overflow-hidden md:h-screen md:grid-rows-[40%,60%]"
-      >
-        <section class="flex items-center">
-          <img class="" src="./img/svg/spot.svg" alt="SPOT TEKST SVG" />
-        </section>
-
-        <div class="flex flex-col md:flex-row">
-          <div class="grid h-[60%] grid-rows-2 md:h-auto md:w-[60%]">
-            <a class="h-full" href="billetter.html">
-              <section
-                class="flex h-full flex-row items-center justify-between gap-spot-gap-10 bg-spot-accent-1 px-spot-padding-15"
-              >
-                <h1
-                  class="text-spot font-spot-aktiv-grotesk-ex text-spot-xl font-spot-bold text-spot-black md:text-spot-xxxl"
-                >
-                  Billetter
-                </h1>
-                <img
-                  class="w-[70px] py-spot-padding-8 px-spot-padding-10 md:w-auto"
-                  src="img/svg/pilsort.svg"
-                  alt=""
-                />
-              </section>
-            </a>
-            <a href="program.html">
-              <section
-                class="flex h-full flex-row items-center justify-between gap-spot-gap-10 bg-spot-accent-2 px-spot-padding-15"
-              >
-                <h1
-                  class="text-spot text-left font-spot-aktiv-grotesk-ex text-spot-xl font-spot-bold text-spot-black md:text-spot-xxxl"
-                >
-                  Program
-                </h1>
-                <img
-                  class="w-[70px] py-spot-padding-8 px-spot-padding-10 md:w-auto"
-                  src="img/svg/pilsort.svg"
-                  alt=""
-                /></section
-            ></a>
-          </div>
-          <section
-            class="-order-1 flex h-[40%] flex-col justify-around bg-spot-white font-spot-bold md:order-1 md:h-auto md:w-[40%]"
-          >
-            <img
-              class="h-[100%] py-spot-padding-8 px-spot-padding-10 md:h-auto"
-              src="./img/svg/2023.svg"
-              alt=""
-            />
-          </section>
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="bg-spot-black">
       <div
@@ -405,11 +314,7 @@
               >
             </li>
             <li>
-              <a
-                class="link"
-                href="sitemap.html"
-                ><span>sitemap</span></a
-              >
+              <a class="link" href="sitemap.html"><span>sitemap</span></a>
             </li>
           </ul>
         </section>
@@ -473,6 +378,5 @@
         </p>
       </section>
     </footer>
-    <script src="cookieboks.js"></script>
   </body>
 </html>
