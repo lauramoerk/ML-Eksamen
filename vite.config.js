@@ -24,7 +24,7 @@ export default defineConfig({
         billetter: resolve(__dirname, "src/billetter.html"),
         artist: resolve(__dirname, "src/artist.html"),
         ansog: resolve(__dirname, "src/ansog.html"),
-        // about: resolve(__dirname, "src/about.html"),
+       
       },
     },
   },
