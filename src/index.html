@@ -14,7 +14,7 @@
   <body
     class="bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-    <header>
+    <header class="fixed w-full bg-spot-black ">
       <section
         class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
@@ -60,7 +60,7 @@
               </label>
               <ul
                 tabindex="0"
-                class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
+                class="dropdown-content menu menu-compact rounded-none mt-3 w-44 bg-spot-black p-2 shadow"
               >
                 <li>
                   <a href="lineup.html" class="link no-underline">lineup</a>
@@ -90,10 +90,13 @@
                   </a>
                   <ul class="bg-spot-black p-2">
                     <li>
-                      <a href="om.html" class="link no-underline">Spot</a>
+                      <a href="om.html" class="link no-underline">om spot</a>
                     </li>
                     <li>
-                      <a href="frivillige.html" class="link no-underline"
+                      <a href="nyheder.html" class="link no-underline">Nyheder</a>
+                    </li>
+                    <li>
+                      <a href="frivillig.html" class="link no-underline"
                         >Frivillige</a
                       >
                     </li>
@@ -149,22 +152,27 @@
                   />
                 </svg>
               </a>
-              <ul class="bg-spot-black p-2">
+              <ul class="bg-spot-black p-2 rounded-none">
                 <li>
                   <a href="om.html" class="link mb-2 p-0 no-underline"
                     >Om Spot</a
                   >
                 </li>
                 <li>
-                  <a href="frivillige.html" class="link p-0 no-underline"
+                  <a href="nyheder.html" class="link mb-2 p-0 no-underline"
+                    >Nyheder</a
+                  >
+                </li>
+                <li>
+                  <a href="frivillig.html" class="link mb-2 p-0 no-underline"
                     >Frivillige</a
                   >
                 </li>
                 <li>
-                  <a href="faq.html" class="link p-0 no-underline">FAQ</a>
+                  <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
                 </li>
                 <li>
-                  <a href="ansog.html" class="link p-0 no-underline">Ansøg</a>
+                  <a href="ansog.html" class="link mb-2 p-0 no-underline">Ansøg</a>
                 </li>
               </ul>
             </li>
@@ -174,7 +182,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="pt-spot-margin-100">
       <div id="cookieboks"
         class="fixed left-0 z-10 flex flex-col border-spot-5 border-spot-black bg-spot-white text-spot-black md:top-96 md:w-1/2 p-spot-padding-30"
       >

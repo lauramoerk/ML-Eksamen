@@ -12,123 +12,182 @@
   <body
     class="noisy bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-  <header>
-    <section
-      class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
-    >
-      <div
-        class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+    <header class="fixed w-full bg-spot-black">
+      <section
+        class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
-        <input
-          class="hidden h-6 border-none bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Søg..."
-        />
-        <img class="w-4 cursor-pointer" src="./img/svg/search.svg" alt="søgeikon" />
-      </div>
-      <h3 class="link p-0 no-underline">Hjælp</h3>
-    </section>
-    <div
-      class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
-    >
-      <div class="w-full">
-        <div class="flex justify-between lg:justify-start w-full">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+        <div
+          class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+        >
+          <input
+            class="hidden h-6 border-none bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Søg..."
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./img/svg/search.svg"
+            alt="søgeikon"
+          />
+        </div>
+        <h3 class="link p-0 no-underline">Hjælp</h3>
+      </section>
+      <div
+        class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
+      >
+        <div class="w-full">
+          <div class="flex w-full justify-between lg:justify-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
-            >
-              <li><a href="lineup.html" class="link no-underline">lineup</a></li>
-              <li><a href="program.html" class="link no-underline">program</a></li>
-              <li><a href="billetter.html" class="link no-underline">billetter</a></li>
-              <li tabindex="0">
-                <a href="om.html" class="justify-between">
-                  Om
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                <li>
+                  <a href="lineup.html" class="link no-underline">lineup</a>
+                </li>
+                <li>
+                  <a href="program.html" class="link no-underline">program</a>
+                </li>
+                <li>
+                  <a href="billetter.html" class="link no-underline"
+                    >billetter</a
                   >
-                    <path
-                      d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                    />
-                  </svg>
-                </a>
-                <ul class="bg-spot-black p-2">
-                  <li><a href="om.html" class="link no-underline">Spot</a></li>
-                  <li><a href="frivillige.html" class="link no-underline">Frivillige</a></li>
-                  <li><a href="faq.html" class="link no-underline">FAQ</a></li>
-                  <li><a href="ansog.html" class="link no-underline">Ansøg</a></li>
-                </ul>
-              </li>
-              <li><a class="link no-underline">Spot+</a></li>
-            </ul>
+                </li>
+                <li tabindex="0">
+                  <a href="om.html" class="justify-between">
+                    Om
+                    <svg
+                      class="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="bg-spot-black p-2">
+                    <li>
+                      <a href="om.html" class="link no-underline">om Spot</a>
+                    </li>
+                    <li>
+                      <a href="nyheder.html" class="link no-underline"
+                        >nyheder</a
+                      >
+                    </li>
+                    <li>
+                      <a href="frivillig.html" class="link no-underline"
+                        >Frivillige</a
+                      >
+                    </li>
+                    <li>
+                      <a href="faq.html" class="link no-underline">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="ansog.html" class="link no-underline">Ansøg</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="link no-underline">Spot+</a></li>
+              </ul>
+            </div>
+            <a
+              href="index.html"
+              class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+            >
+              <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
+              <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
+                Spot Festival
+              </h3>
+            </a>
           </div>
-          <a href="index.html"
-            class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+        </div>
+        <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
+          <ul
+            class="menu menu-horizontal flex gap-spot-gap-15 rounded-none px-1"
           >
-            <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
-            <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
-              Spot Festival
-            </h3>
-          </a>
+            <li>
+              <a href="lineup.html" class="link p-0 no-underline">lineup</a>
+            </li>
+            <li>
+              <a
+                href="program.html"
+                class="p-0 underline decoration-[3px] underline-offset-[5px]"
+                >program</a
+              >
+            </li>
+            <li>
+              <a href="billetter.html" class="link p-0 no-underline"
+                >billetter</a
+              >
+            </li>
+            <li tabindex="0">
+              <a href="om.html" class="p-0">
+                Om
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-spot-black p-2">
+                <li>
+                  <a href="om.html" class="link mb-2 p-0 no-underline"
+                    >Om Spot</a
+                  >
+                </li>
+                <li>
+                  <a href="nyheder.html" class="link mb-2 p-0 no-underline"
+                    >nyheder</a
+                  >
+                </li>
+                <li>
+                  <a href="frivillig.html" class="link mb-2 p-0 no-underline"
+                    >Frivillige</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
+                </li>
+                <li>
+                  <a href="ansog.html" class="link mb-2 p-0 no-underline">Ansøg</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
-        <ul class="menu menu-horizontal flex gap-spot-gap-15 px-1 rounded-none">
-          <li><a href="lineup.html" class="link p-0 no-underline">lineup</a></li>
-          <li><a href="program.html" class="p-0 underline underline-offset-[5px] decoration-[3px]">program</a></li>
-          <li><a href="billetter.html" class="link p-0 no-underline">billetter</a></li>
-          <li tabindex="0">
-            <a href="om.html" class="p-0">
-              Om
-              <svg
-                class="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                />
-              </svg>
-            </a>
-            <ul class="bg-spot-black p-2">
-              <li><a href="om.html" class="link mb-2 p-0 no-underline">Om Spot</a></li>
-              <li><a href="frivillige.html" class="link p-0 no-underline">Frivillige</a></li>
-              <li><a href="faq.html" class="link p-0 no-underline">FAQ</a></li>
-              <li><a href="ansog.html" class="link p-0 no-underline">Ansøg</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-    <main class="mx-spot-margin-50">
+    </header>
+    <main class="mx-spot-margin-50 pt-spot-margin-100">
       <h1
-        class="text-center md:text-left font-spot-display text-spot-mega md:text-spot-display"
+        class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
       >
         program
       </h1>
@@ -278,28 +337,28 @@
           <div class="mx-spot-margin-50 flex flex-col items-center">
             <h3 class="text-center text-spot-xl font-spot-black">Fredag</h3>
             <ul
-              class="flex justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular w-2/3"
+              class="flex w-2/3 justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular"
             >
               <li>Tid</li>
               <li>artist</li>
               <li>sted</li>
             </ul>
             <ul
-              class="my-spot-margin-30 flex flex-row justify-between text-spot-md font-spot-bold w-2/3"
+              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
             >
               <li>11:30</li>
               <li>black tower</li>
               <li>radar</li>
             </ul>
             <ul
-              class="my-spot-margin-30 flex flex-row justify-between text-spot-md font-spot-bold w-2/3"
+              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
             >
               <li>12:00</li>
               <li>Dizzy Mizz Lizzy</li>
               <li>radar</li>
             </ul>
             <ul
-              class="my-spot-margin-30 flex flex-row justify-between text-spot-md font-spot-bold w-2/3"
+              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
             >
               <li>14:15</li>
               <li>Champagne Bruce</li>
@@ -307,25 +366,27 @@
             </ul>
           </div>
         </section>
-        <section class="hidden pt-spot-padding-100 pb-spot-gap-55 md:block justify-center">
+        <section
+          class="hidden justify-center pt-spot-padding-100 pb-spot-gap-55 md:block"
+        >
           <div class="mx-spot-margin-50 flex flex-col items-center">
             <h3 class="text-center text-spot-xl font-spot-black">Lørdag</h3>
             <ul
-              class="flex justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular w-2/3"
+              class="flex w-2/3 justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular"
             >
               <li>Tid</li>
               <li>artist</li>
               <li>sted</li>
             </ul>
             <ul
-              class="my-spot-margin-30 flex flex-row justify-between w-2/3 text-spot-md font-spot-bold"
+              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
             >
               <li>13:45</li>
               <li>Amili dot</li>
               <li>rader</li>
             </ul>
             <ul
-              class="my-spot-margin-30 flex flex-row justify-between text-spot-md w-2/3 font-spot-bold"
+              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
             >
               <li>16:00</li>
               <li>ava</li>
@@ -359,7 +420,7 @@
             size="30"
           />
           <button
-            class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white border-spot-white hover:text-spot-black"
+            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
           >
             Tilmeld
           </button>
@@ -468,7 +529,9 @@
               /></a>
             </li>
             <li>
-              <a href="https://www.youtube.com/@SPOTFestivaldk"> <img src="img/svg/youtube.svg" alt="youtube logo" /></a>
+              <a href="https://www.youtube.com/@SPOTFestivaldk">
+                <img src="img/svg/youtube.svg" alt="youtube logo"
+              /></a>
             </li>
             <li>
               <a href="https://www.instagram.com/spotfestival/">

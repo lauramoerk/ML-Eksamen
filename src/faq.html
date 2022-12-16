@@ -1,349 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://use.typekit.net/eue2tfn.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="googlebot" content="noindex, nofollow" />
-        <title>SPOT festival</title>
-      </head>
-<body class="bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white">
-  <header>
-    <section
-      class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
-    >
-      <div
-        class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/eue2tfn.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <title>SPOT festival</title>
+  </head>
+  <body
+    class="relative bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
+  >
+    <header class="fixed -z--spot-index-level-4 w-full bg-spot-black">
+      <section
+        class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray bg-spot-black pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
-        <input
-          class="hidden h-6 border-none bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Søg..."
-        />
-        <img class="w-4 cursor-pointer" src="./img/svg/search.svg" alt="søgeikon" />
-      </div>
-      <h3 class="link p-0 no-underline">Hjælp</h3>
-    </section>
-    <div
-      class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
-    >
-      <div class="w-full">
-        <div class="flex justify-between lg:justify-start w-full">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
-            >
-              <li><a href="lineup.html" class="link no-underline">lineup</a></li>
-              <li><a href="program.html" class="link no-underline">program</a></li>
-              <li><a href="billetter.html" class="link no-underline">billetter</a></li>
-              <li tabindex="0">
-                <a href="om.html" class="justify-between">
-                  Om
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                    />
-                  </svg>
-                </a>
-                <ul class="bg-spot-black p-2">
-                  <li><a href="om.html" class="link no-underline">Spot</a></li>
-                  <li><a href="frivillige.html" class="link no-underline">Frivillige</a></li>
-                  <li><a href="faq.html" class="link no-underline">FAQ</a></li>
-                  <li><a href="ansog.html" class="link no-underline">Ansøg</a></li>
-                </ul>
-              </li>
-              <li><a class="link no-underline">Spot+</a></li>
-            </ul>
-          </div>
-          <a href="index.html"
-            class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+        <div
+          class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+        >
+          <input
+            class="hidden h-6 border-none bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Søg..."
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./img/svg/search.svg"
+            alt="søgeikon"
+          />
+        </div>
+        <h3 class="link p-0 no-underline">Hjælp</h3>
+      </section>
+      <div
+        class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
+      >
+        <div class="w-full bg-spot-black">
+          <div
+            class="flex w-full justify-between bg-spot-black lg:justify-start"
           >
-            <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
-            <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
-              Spot Festival
-            </h3>
-          </a>
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
+              >
+                <li>
+                  <a href="lineup.html" class="link no-underline">lineup</a>
+                </li>
+                <li>
+                  <a href="program.html" class="link no-underline">program</a>
+                </li>
+                <li>
+                  <a href="billetter.html" class="link no-underline"
+                    >billetter</a
+                  >
+                </li>
+                <li tabindex="0">
+                  <a href="om.html" class="justify-between">
+                    Om
+                    <svg
+                      class="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="bg-spot-black p-2">
+                    <li>
+                      <a href="om.html" class="link no-underline">om Spot</a>
+                    </li>
+                    <li>
+                      <a href="nyheder.html" class="link no-underline"
+                        >nyheder</a
+                      >
+                    </li>
+                    <li>
+                      <a href="frivillig.html" class="link no-underline"
+                        >Frivillige</a
+                      >
+                    </li>
+                    <li>
+                      <a href="faq.html" class="link no-underline">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="ansog.html" class="link no-underline">Ansøg</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="link no-underline">Spot+</a></li>
+              </ul>
+            </div>
+            <a
+              href="index.html"
+              class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+            >
+              <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
+              <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
+                Spot Festival
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div
+          class="navbar-end hidden bg-spot-black md:mr-spot-margin-10 lg:flex"
+        >
+          <ul
+            class="menu menu-horizontal flex gap-spot-gap-15 rounded-none bg-spot-black px-1"
+          >
+            <li>
+              <a href="lineup.html" class="link p-0 no-underline">lineup</a>
+            </li>
+            <li>
+              <a href="program.html" class="link p-0 no-underline">program</a>
+            </li>
+            <li>
+              <a href="billetter.html" class="link p-0 no-underline"
+                >billetter</a
+              >
+            </li>
+            <li
+              class="underline decoration-[3px] underline-offset-[5px]"
+              tabindex="0"
+            >
+              <a href="om.html" class="p-0">
+                Om
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-spot-black p-2">
+                <li>
+                  <a href="om.html" class="link mb-2 p-0 no-underline"
+                    >Om Spot</a
+                  >
+                </li>
+                <li>
+                  <a href="nyheder.html" class="link mb-2 p-0 no-underline"
+                    >nyheder</a
+                  >
+                </li>
+                <li>
+                  <a href="frivillig.html" class="link mb-2 p-0 no-underline"
+                    >Frivillige</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
+                </li>
+                <li>
+                  <a href="ansog.html" class="link mb-2 p-0 no-underline">Ansøg</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
-        <ul class="menu menu-horizontal flex gap-spot-gap-15 px-1 rounded-none">
-          <li><a href="lineup.html" class="link p-0 no-underline">lineup</a></li>
-          <li><a href="program.html" class="p-0 link no-underline">program</a></li>
-          <li><a href="billetter.html" class="link p-0 no-underline">billetter</a></li>
-          <li class="underline underline-offset-[5px] decoration-[3px]" tabindex="0">
-            <a href="om.html" class="p-0">
-              Om
-              <svg
-                class="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                />
-              </svg>
-            </a>
-            <ul class="bg-spot-black p-2">
-              <li><a href="om.html" class="link mb-2 p-0 no-underline">Om Spot</a></li>
-              <li><a href="frivillige.html" class="link p-0 no-underline">Frivillige</a></li>
-              <li><a href="faq.html" class="link p-0 no-underline">FAQ</a></li>
-              <li><a href="ansog.html" class="link p-0 no-underline">Ansøg</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
-        </ul>
-      </div>
-    </div>
-  </header>
-<main>
-<h1 class="text-center md:text-left font-spot-display text-spot-mega md:text-spot-display">faq</h1>
-<section class="mx-spot-margin-50 flex flex-col items-center pb-spot-padding-60">
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 w-2/3">
-    <summary><span class="text-spot-sm text-center ">HVOR BYTTER JEG MIN BILLET TIL ET FESTIVALARMBÅND?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Personer med ungdomsbillet skal dokumentere med billede-id, at de på startdagen for festivalens hovedprogram, fredag 6. maj 2022, ikke er fyldt 25. år. Der sættes kun 1.000 stk. ungdomsbilletter til salg.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class="text-spot-sm text-center">HVOR GENNEMFØRES SPOT?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">I hjertet af Aarhus, som altid. Der vil være mulighed for at se koncerter på både spillesteder og udendørsscener, præcis som I kender SPOT bedst. Koncerterne afvikles på forskellige scener i og omkring Musikhusparken samt i Musikhusets forskellige sale. Der er desuden koncerter på et hav af Aarhus' spillesteder og på alternative scener på tværs af byen.
-<br><br>
-      Du kan finde et kort over pladsen i vores app samt se, hvor de enkelte SPOT-koncerter afvikles i tidsplanen.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class=" text-spot-sm text-center">HVORNÅR PRÆSENTERES DET SAMLEDE PROGRAM?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Det endelige program er offentliggjort! Du kan se de her eller i vores app til iOS og Android. Ligeledes står årets tidsplan også klar. Du begynder at planlægge dit SPOT 2022 her eller i app'en.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class=" text-spot-sm text-center">HVOR KAN JEG FINDE ET KORT OVER FESTIVALPLADSEN?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Du kan finde et kort over pladsen i vores app samt se, hvor de enkelte SPOT-koncerter afvikles i tidsplanen.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class=" text-spot-sm text-center">HVAD BLIVER KAPACITETEN?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Det er ikke helt fastlagt endnu, men vi kommer til at afvikle en - i den forstand - almindelig SPOT Festival. Vores mange venues på pladsen svinger mellem alt fra 180 til 3.000.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class="text-spot-sm text-center">ÆNDRINGER I PROGRAMMET</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30"><span class="font-spot-bold">JJ Paulo og Loose Ends</span><br>
-      I den trykte tidsplan står der, at JJ Paulo spiller lørdag og Loose Ends spiller fredag. Det er selvfølgelig omvendt, så JJ Paulo spiller fredag på HQ og Loose Ends spiller lørdag kl. 22:00.
-      <br><br>
-      <span class="font-spot-bold">La Dame Blanche har aflyst</span><br>
-      Af familiære årsager har La Dame Blanche været nødsaget til at aflyse koncerten på Turkis, 00:30 lørdag.
-      <br><br>
-      <span class="font-spot-bold">Thorhan på Turkis er aflyst</span><br>
-      Der er desværre et bandmedlem, der har mistet en finger, og derfor har THORHAN været nødsaget til at aflyse koncerten på Turkis, lørdag kl. 17:30. Vi ønsker bandmedlemmet god bedring!
-      <br><br>
-      <span class="font-spot-bold">Black Førest på A-huset er aflyst</span><br>
-      Vi har desværre fået en aflysning fra Black Førest, der erstattes af HansSOLO på A-huset, lørdag kl. 17:00.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class=" text-spot-sm text-center">KAN JEG FÅ REFUNDERET MIN BILLET VED AFLYSNING?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Hvis SPOT som helhed bliver aflyst, så refunderer vi selvfølgelig alle billetter.Vi refunderer kun under helt særlige omstændigheder billetter, hvis ikke den samlede festival bliver aflyst. Er du i tvivl, så er du altid velkommen til at skrive til os på billet@spotfestival.dk.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class=" text-spot-sm text-center">HVOR MANGE KONCERTER AFVIKLES PÅ SPOT?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Der vil være mere end 200 koncerter til årets SPOT Festival.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class=" text-spot-sm text-center">KAN MAN KØBE MAD OG DRIKKE PÅ SPOT?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Der vil være madboder med lækre retter og snacks, samt barer hvor I kan få fingrene i kolde drikkevarer, både med og uden alkohol.</p>
-  </details>
-  <details class="cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30 w-2/3">
-    <summary class="text-spot-md"><span class="text-spot-sm text-center">KAN MAN KØBE EN UNGDOMSBILLET?</span></summary>
-    <p class="font-spot-regular text-spot-xs normal-case py-spot-padding-30">Der er desværre udsolgt for ungdomsbilletterne, men du kan fortsat købe både todags- og endags-billetter her.</p>
-  </details>
-</section>
-</main>
-<footer class="bg-spot-black">
-  <div
-    class="flex flex-col border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60 md:flex-row md:items-center md:justify-between"
-  >
-    <div class="gap-gap-5 flex flex-col">
-      <h3>forbliv opdateret</h3>
-      <p class="desktop-body text-spot-xs font-spot-regular normal-case">
-        Tilmeld dig vores nyhedsbrev!
-      </p>
-    </div>
-    <section
-      class="flex flex-col items-center gap-spot-gap-15 pt-spot-padding-25 md:flex-row md:pt-spot-padding-0"
+    </header>
+    <main
+      class="relative -z--spot-index-level-1 mx-spot-margin-50 pt-spot-margin-100"
     >
-      <label class="text-spot-sm" for="email">Email</label>
-
-      <input
-        class="bg-spot-black text-spot-xs text-spot-white"
-        type="email"
-        placeholder="Eksempel@minmail.dk"
-        id="email"
-        pattern=".+@globex\.com"
-        size="30"
-      />
-      <button
-        class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white border-spot-white hover:text-spot-black"
+      <h1
+        class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
       >
-        Tilmeld
-      </button>
-    </section>
-  </div>
-  <div
-    class="md: flex flex-col justify-evenly md:flex-row md:pt-spot-padding-40"
-  >
-    <section
-      class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
-    >
-      <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">spot</h3>
-      <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
-        <li>
-          <a class="link" href="#"><span>forside</span></a>
-        </li>
-        <li>
-          <a class="link" href="lineup.html"><span>lineup</span></a>
-        </li>
-        <li>
-          <a class="link" href="program.html"><span>program</span></a>
-        </li>
-        <li>
-          <a class="link" href="billetter.html"><span>billetter</span></a>
-        </li>
-        <li>
-          <a class="link" href="om.html"><span>om spot</span></a>
-        </li>
-        <li>
-          <a class="link" href=""><span>frivillige</span></a>
-        </li>
-        <li>
-          <a class="link" href="ansog.html"><span>ansøg</span></a>
-        </li>
-        <li>
-          <a class="link" href="faq.html"><span>faq</span></a>
-        </li>
-        <li>
-          <a class="link" href="spotekstra.html"><span>spot+</span></a>
-        </li>
-      </ul>
-    </section>
-    <section
-      class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
-    >
-      <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
-        adminstrativ
-      </h3>
-      <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
-        <li>
-          <a
-            class="link"
-            href="https://administrativt.spot-festival.dk/bestyrelse"
-            ><span>sektratariat</span></a
+        faq
+      </h1>
+      <section
+        class="relative mx-spot-margin-50 flex flex-col items-center pb-spot-padding-60"
+      >
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20"
+        >
+          <summary>
+            <span class="text-center text-spot-sm"
+              >HVOR BYTTER JEG MIN BILLET TIL ET FESTIVALARMBÅND?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
           >
-        </li>
-        <li>
-          <a
-            class="link"
-            href="https://administrativt.spot-festival.dk/bestyrelse"
-            ><span>bestyrelse</span></a
+            Personer med ungdomsbillet skal dokumentere med billede-id, at de på
+            startdagen for festivalens hovedprogram, fredag 6. maj 2022, ikke er
+            fyldt 25. år. Der sættes kun 1.000 stk. ungdomsbilletter til salg.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm">HVOR GENNEMFØRES SPOT?</span>
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
           >
-        </li>
-        <li>
-          <a
-            class="link"
-            href="https://administrativt.spot-festival.dk/m%C3%A5laftale"
-            ><span>målsætninger</span></a
+            I hjertet af Aarhus, som altid. Der vil være mulighed for at se
+            koncerter på både spillesteder og udendørsscener, præcis som I
+            kender SPOT bedst. Koncerterne afvikles på forskellige scener i og
+            omkring Musikhusparken samt i Musikhusets forskellige sale. Der er
+            desuden koncerter på et hav af Aarhus' spillesteder og på
+            alternative scener på tværs af byen. <br /><br />
+            Du kan finde et kort over pladsen i vores app samt se, hvor de
+            enkelte SPOT-koncerter afvikles i tidsplanen.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm"
+              >HVORNÅR PRÆSENTERES DET SAMLEDE PROGRAM?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
           >
-        </li>
-        <li>
-          <a
-            class="link"
-            href="https://administrativt.spot-festival.dk/vedt%C3%A6gter"
-            ><span>vedtægter</span></a
+            Det endelige program er offentliggjort! Du kan se de her eller i
+            vores app til iOS og Android. Ligeledes står årets tidsplan også
+            klar. Du begynder at planlægge dit SPOT 2022 her eller i app'en.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm"
+              >HVOR KAN JEG FINDE ET KORT OVER FESTIVALPLADSEN?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
           >
-        </li>
-      </ul>
-    </section>
-    <section
-      class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
-    >
-      <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
-        privatlivspolitik
-      </h3>
-      <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
-        <li>
-          <a
-            class="link"
-            href="https://administrativt.spot-festival.dk/cookie-og-privatliv"
-            ><span>cookie- og privatliv</span></a
+            Du kan finde et kort over pladsen i vores app samt se, hvor de
+            enkelte SPOT-koncerter afvikles i tidsplanen.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm"
+              >HVAD BLIVER KAPACITETEN?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
           >
-        </li>
-      </ul>
-    </section>
-    <section
-      class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
-    >
-      <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
-        social media
-      </h3>
-      <ul class="flex items-center gap-spot-gap-10 text-spot-xs">
-        <li>
-          <a href="https://www.facebook.com/spotfestival">
-            <img src="img/svg/facebook.svg" alt="facebook logo"
+            Det er ikke helt fastlagt endnu, men vi kommer til at afvikle en - i
+            den forstand - almindelig SPOT Festival. Vores mange venues på
+            pladsen svinger mellem alt fra 180 til 3.000.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm">ÆNDRINGER I PROGRAMMET</span>
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
+          >
+            <span class="font-spot-bold">JJ Paulo og Loose Ends</span><br />
+            I den trykte tidsplan står der, at JJ Paulo spiller lørdag og Loose
+            Ends spiller fredag. Det er selvfølgelig omvendt, så JJ Paulo
+            spiller fredag på HQ og Loose Ends spiller lørdag kl. 22:00.
+            <br /><br />
+            <span class="font-spot-bold">La Dame Blanche har aflyst</span><br />
+            Af familiære årsager har La Dame Blanche været nødsaget til at
+            aflyse koncerten på Turkis, 00:30 lørdag.
+            <br /><br />
+            <span class="font-spot-bold">Thorhan på Turkis er aflyst</span
+            ><br />
+            Der er desværre et bandmedlem, der har mistet en finger, og derfor
+            har THORHAN været nødsaget til at aflyse koncerten på Turkis, lørdag
+            kl. 17:30. Vi ønsker bandmedlemmet god bedring!
+            <br /><br />
+            <span class="font-spot-bold">Black Førest på A-huset er aflyst</span
+            ><br />
+            Vi har desværre fået en aflysning fra Black Førest, der erstattes af
+            HansSOLO på A-huset, lørdag kl. 17:00.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm"
+              >KAN JEG FÅ REFUNDERET MIN BILLET VED AFLYSNING?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
+          >
+            Hvis SPOT som helhed bliver aflyst, så refunderer vi selvfølgelig
+            alle billetter.Vi refunderer kun under helt særlige omstændigheder
+            billetter, hvis ikke den samlede festival bliver aflyst. Er du i
+            tvivl, så er du altid velkommen til at skrive til os på
+            billet@spotfestival.dk.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm"
+              >HVOR MANGE KONCERTER AFVIKLES PÅ SPOT?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
+          >
+            Der vil være mere end 200 koncerter til årets SPOT Festival.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm"
+              >KAN MAN KØBE MAD OG DRIKKE PÅ SPOT?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
+          >
+            Der vil være madboder med lækre retter og snacks, samt barer hvor I
+            kan få fingrene i kolde drikkevarer, både med og uden alkohol.
+          </p>
+        </details>
+        <details
+          class="w-2/3 cursor-pointer border-b-spot-3 pb-spot-padding-20 pt-spot-padding-30"
+        >
+          <summary class="text-spot-md">
+            <span class="text-center text-spot-sm"
+              >KAN MAN KØBE EN UNGDOMSBILLET?</span
+            >
+          </summary>
+          <p
+            class="py-spot-padding-30 text-spot-xs font-spot-regular normal-case"
+          >
+            Der er desværre udsolgt for ungdomsbilletterne, men du kan fortsat
+            købe både todags- og endags-billetter her.
+          </p>
+        </details>
+      </section>
+    </main>
+    <footer class="bg-spot-black">
+      <div
+        class="flex flex-col border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60 md:flex-row md:items-center md:justify-between"
+      >
+        <div class="gap-gap-5 flex flex-col">
+          <h3>forbliv opdateret</h3>
+          <p class="desktop-body text-spot-xs font-spot-regular normal-case">
+            Tilmeld dig vores nyhedsbrev!
+          </p>
+        </div>
+        <section
+          class="flex flex-col items-center gap-spot-gap-15 pt-spot-padding-25 md:flex-row md:pt-spot-padding-0"
+        >
+          <label class="text-spot-sm" for="email">Email</label>
+
+          <input
+            class="bg-spot-black text-spot-xs text-spot-white"
+            type="email"
+            placeholder="Eksempel@minmail.dk"
+            id="email"
+            pattern=".+@globex\.com"
+            size="30"
+          />
+          <button
+            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
+          >
+            Tilmeld
+          </button>
+        </section>
+      </div>
+      <div
+        class="md: flex flex-col justify-evenly md:flex-row md:pt-spot-padding-40"
+      >
+        <section
+          class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
+        >
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">spot</h3>
+          <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
+            <li>
+              <a class="link" href="#"><span>forside</span></a>
+            </li>
+            <li>
+              <a class="link" href="lineup.html"><span>lineup</span></a>
+            </li>
+            <li>
+              <a class="link" href="program.html"><span>program</span></a>
+            </li>
+            <li>
+              <a class="link" href="billetter.html"><span>billetter</span></a>
+            </li>
+            <li>
+              <a class="link" href="om.html"><span>om spot</span></a>
+            </li>
+            <li>
+              <a class="link" href=""><span>frivillige</span></a>
+            </li>
+            <li>
+              <a class="link" href="ansog.html"><span>ansøg</span></a>
+            </li>
+            <li>
+              <a class="link" href="faq.html"><span>faq</span></a>
+            </li>
+            <li>
+              <a class="link" href="spotekstra.html"><span>spot+</span></a>
+            </li>
+          </ul>
+        </section>
+        <section
+          class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
+        >
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
+            adminstrativ
+          </h3>
+          <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/bestyrelse"
+                ><span>sektratariat</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/bestyrelse"
+                ><span>bestyrelse</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/m%C3%A5laftale"
+                ><span>målsætninger</span></a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/vedt%C3%A6gter"
+                ><span>vedtægter</span></a
+              >
+            </li>
+          </ul>
+        </section>
+        <section
+          class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
+        >
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
+            privatlivspolitik
+          </h3>
+          <ul class="flex flex-col gap-spot-gap-5 text-spot-xs">
+            <li>
+              <a
+                class="link"
+                href="https://administrativt.spot-festival.dk/cookie-og-privatliv"
+                ><span>cookie- og privatliv</span></a
+              >
+            </li>
+          </ul>
+        </section>
+        <section
+          class="px-spot-margin-50 pt-spot-margin-35 md:p-spot-padding-15"
+        >
+          <h3 class="pb-spot-padding-10 text-spot-sm font-spot-bold">
+            social media
+          </h3>
+          <ul class="flex items-center gap-spot-gap-10 text-spot-xs">
+            <li>
+              <a href="https://www.facebook.com/spotfestival">
+                <img src="img/svg/facebook.svg" alt="facebook logo"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@SPOTFestivaldk">
+                <img src="img/svg/youtube.svg" alt="youtube ikon"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/spotfestival/">
+                <img src="img/svg/instagram.svg" alt="instagram logo"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section
+          class="flex content-center items-center justify-center pt-spot-padding-50 md:-order-3 md:p-spot-padding-15"
+        >
+          <a href="index.html"
+            ><img
+              class="h-auto w-52"
+              src="img/spot-logo-text.png"
+              alt="SPOT logo"
           /></a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@SPOTFestivaldk">
-            <img src="img/svg/youtube.svg" alt="youtube ikon"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/spotfestival/">
-            <img src="img/svg/instagram.svg" alt="instagram logo"
-          /></a>
-        </li>
-      </ul>
-    </section>
-    <section
-      class="flex content-center items-center justify-center pt-spot-padding-50 md:-order-3 md:p-spot-padding-15"
-    >
-      <a href="index.html"
-        ><img
-          class="h-auto w-52"
-          src="img/spot-logo-text.png"
-          alt="SPOT logo"
-      /></a>
-    </section>
-  </div>
-  <section
-    class="mx-spot-margin-50 mt-spot-margin-50 pb-spot-margin-35 text-center text-spot-xxxs"
-  >
-    <p>
-      SPOT Festival ● Vester Alle 15 ● 8000 Aarhus C ● DK ●<br />
-      Tel +45 86128444 ● info@spotfestival.dk
-    </p>
-  </section>
-</footer>
-</body>
+        </section>
+      </div>
+      <section
+        class="mx-spot-margin-50 mt-spot-margin-50 pb-spot-margin-35 text-center text-spot-xxxs"
+      >
+        <p>
+          SPOT Festival ● Vester Alle 15 ● 8000 Aarhus C ● DK ●<br />
+          Tel +45 86128444 ● info@spotfestival.dk
+        </p>
+      </section>
+    </footer>
+  </body>
 </html>
