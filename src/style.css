@@ -21,7 +21,7 @@
     /* animation: noise 1s steps(2) infinite; */
   }
 
-  #empty {
+  .empty {
     content:" ";
     height: 5px;
     width: 40px;
@@ -36,7 +36,6 @@
     border-radius: none;
   }
   
-
   /* @-webkit-keyframes noise {
     to {
       transform: translate3d(-7rem, 0, 0);
@@ -134,7 +133,7 @@
              width: 2000px;
              height: 2px;
        }
-    }
+    
 
     
  
@@ -659,4 +658,5 @@ details[open] summary:after {
 }
 details summary {
   outline: 0;
+}
 }

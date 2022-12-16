@@ -10,9 +10,9 @@
     <title>SPOT festival</title>
   </head>
   <body
-    class="noisy bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
+    class=" bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white relative"
   >
-    <header class="fixed w-full bg-spot-black">
+    <header class="fixed w-full bg-spot-black -z--spot-index-level-4">
       <section
         class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
@@ -185,218 +185,224 @@
         </div>
       </div>
     </header>
-    <main class="mx-spot-margin-50 pt-spot-margin-100">
-      <h1
-        class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
-      >
-        program
-      </h1>
-      <div
-        class="flex flex-col md:flex-row md:gap-spot-gap-65 lg:justify-center"
-      >
-        <div class="mt-spot-margin-30">
-          <section>
-            <h4 class="mb-spot-margin-25 text-spot-sm">
-              Søg efter artist eller sted
-            </h4>
-            <div
-              class="flex w-fit flex-row justify-between border-spot-1 border-spot-white bg-spot-black py-spot-padding-8 pr-spot-padding-8 md:w-full"
-            >
-              <input
-                class="h-6 border-none w-full bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
-                type="text"
-                name="searchBar"
-                id="searchBar"
-                placeholder="Søg artist eller sted..."
+    <main class="relative mx-spot-margin-50">
+      
+      <section class="noisy w-full fixed -z--spot-index-level-1"></section>
+       <div class=" pt-spot-margin-100 relative -z--spot-index-level-3 w-full">
+          <h1
+            class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
+          >
+            program
+          </h1>
+          <div
+            class="flex flex-col md:flex-row md:gap-spot-gap-65 lg:justify-center"
+          >
+            <div class="mt-spot-margin-30">
+              <section>
+                <h4 class="mb-spot-margin-25 text-spot-sm">
+                  Søg efter artist eller sted
+                </h4>
+                <div
+                  class="flex w-fit flex-row justify-between border-spot-1 border-spot-white bg-spot-black py-spot-padding-8 pr-spot-padding-8 md:w-full"
+                >
+                  <input
+                    class="h-6 border-none w-full bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
+                    type="text"
+                    name="searchBar"
+                    id="searchBar"
+                    placeholder="Søg artist eller sted..."
+                  />
+                  <img class="w-4" src="./img/svg/search.svg" alt="søgeikon" />
+                </div>
+              </section>
+              <section class="mt-spot-margin-40 mb-spot-margin-40">
+                <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter tidspunkt</h4>
+                <span class="multi-range">
+                  <div class="flex w-[250px] justify-between text-spot-xs">
+                    <p>11:00</p>
+                    <p>02:00</p>
+                  </div>
+                  <div>
+                    <input
+                      class="rangething"
+                      type="range"
+                      min="0"
+                      max="50"
+                      value="5"
+                      id="lower"
+                    />
+                    <input
+                      class="rangething"
+                      type="range"
+                      min="0"
+                      max="50"
+                      value="45"
+                      id="upper"
+                    />
+                  </div>
+                </span>
+              </section>
+              <section>
+                <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter genre</h4>
+                <div class="flex flex-wrap gap-spot-gap-5">
+                  
+                  <button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    pop
+                  </button>
+                  <button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    rock
+                  </button>
+                  <button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    reggae
+                  </button>
+                  <button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    electronic
+                  </button>
+                  <button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    soul</button
+                  ><button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    R&B
+                  </button>
+                  <button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    country
+                  </button>
+                  <button
+                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                  >
+                    andre genre
+                  </button>
+                </div>
+              </section>
+            </div>
+            <div class="flex flex-col md:flex-row">
+              <img
+                class="mt-spot-margin-55 mb-spot-margin-40 sm:hidden"
+                src="img/map-ver.png"
+                alt="Kort over Århus venues"
               />
-              <img class="w-4" src="./img/svg/search.svg" alt="søgeikon" />
+              <img
+                class="mt-spot-margin-55 mb-spot-margin-40 hidden sm:block md:mt-spot-margin-20 lg:max-w-xl"
+                src="img/map-hor.png"
+                alt="Kort over Århus venues"
+              />
+              <iframe src="https://snazzymaps.com/embed/443698" width="100%" height="600px" style="border:none;"></iframe>
             </div>
-          </section>
-          <section class="mt-spot-margin-40 mb-spot-margin-40">
-            <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter tidspunkt</h4>
-            <span class="multi-range">
-              <div class="flex w-[250px] justify-between text-spot-xs">
-                <p>11:00</p>
-                <p>02:00</p>
-              </div>
-              <div>
-                <input
-                  class="rangething"
-                  type="range"
-                  min="0"
-                  max="50"
-                  value="5"
-                  id="lower"
-                />
-                <input
-                  class="rangething"
-                  type="range"
-                  min="0"
-                  max="50"
-                  value="45"
-                  id="upper"
-                />
-              </div>
-            </span>
-          </section>
-          <section>
-            <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter genre</h4>
-            <div class="flex flex-wrap gap-spot-gap-5">
+          </div>
+          <div>
+            <h3
+              class="my-spot-margin-30 text-center text-spot-lg font-spot-black md:text-spot-xxl"
+            >
+              Godsbanen
+            </h3>
+            <div class="flex flex-row justify-center gap-spot-gap-25 md:hidden">
               <button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
               >
-                pop
+                fredag
               </button>
               <button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
+                class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
               >
-                rock
-              </button>
-              <button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
-              >
-                reggae
-              </button>
-              <button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
-              >
-                electronic
-              </button>
-              <button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
-              >
-                soul</button
-              ><button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
-              >
-                R&B
-              </button>
-              <button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
-              >
-                country
-              </button>
-              <button
-                class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95"
-              >
-                andre genre
+                lørdag
               </button>
             </div>
-          </section>
-        </div>
-        <div class="flex flex-col md:flex-row">
-          <img
-            class="mt-spot-margin-55 mb-spot-margin-40 sm:hidden"
-            src="img/map-ver.png"
-            alt="Kort over Århus venues"
-          />
-          <img
-            class="mt-spot-margin-55 mb-spot-margin-40 hidden sm:block md:mt-spot-margin-20 lg:max-w-xl"
-            src="img/map-hor.png"
-            alt="Kort over Århus venues"
-          />
-          <!-- <iframe src="https://snazzymaps.com/embed/443698" width="100%" height="600px" style="border:none;"></iframe> -->
-        </div>
-      </div>
-      <div>
-        <h3
-          class="my-spot-margin-30 text-center text-spot-lg font-spot-black md:text-spot-xxl"
-        >
-          Godsbanen
-        </h3>
-        <div class="flex flex-row justify-center gap-spot-gap-25 md:hidden">
-          <button
-            class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
-          >
-            fredag
-          </button>
-          <button
-            class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
-          >
-            lørdag
-          </button>
-        </div>
-
-        <section class="flex flex-col md:hidden">
-          <ul
-            class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
-          >
-            <li>11:30</li>
-            <li>Black tower</li>
-            <li>radar</li>
-          </ul>
-          <ul
-            class="mt-spot-margin-20 flex flex-row justify-between text-spot-sm"
-          >
-            <li>11:30</li>
-            <li>Dizzy Mizz Lizzy</li>
-            <li>radar</li>
-          </ul>
-        </section>
-        <section class="hidden md:block">
-          <div class="mx-spot-margin-50 flex flex-col items-center">
-            <h3 class="text-center text-spot-xl font-spot-black">Fredag</h3>
-            <ul
-              class="flex w-2/3 justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular"
+    
+            <section class="flex flex-col md:hidden">
+              <ul
+                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+              >
+                <li>11:30</li>
+                <li>Black tower</li>
+                <li>radar</li>
+              </ul>
+              <ul
+                class="mt-spot-margin-20 flex flex-row justify-between text-spot-sm"
+              >
+                <li>11:30</li>
+                <li>Dizzy Mizz Lizzy</li>
+                <li>radar</li>
+              </ul>
+            </section>
+            <section class="hidden md:block">
+              <div class="mx-spot-margin-50 flex flex-col items-center">
+                <h3 class="text-center text-spot-xl font-spot-black">Fredag</h3>
+                <ul
+                  class="flex w-2/3 justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular"
+                >
+                  <li>Tid</li>
+                  <li>artist</li>
+                  <li>sted</li>
+                </ul>
+                <ul
+                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
+                >
+                  <li>11:30</li>
+                  <li class="flex flex-col">black tower <br> <span class="text-center text-sm font-spot-regular">rock</span></li>
+                  <li>radar</li>
+                </ul>
+                <ul
+                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
+                >
+                  <li>12:00</li>
+                  <li class="flex flex-col">Dizzy Mizz lizzy<br> <span class="text-center text-sm font-spot-regular">rock</span></li>
+                  <li>radar</li>
+                </ul>
+                <ul
+                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
+                >
+                  <li>14:15</li>
+                  <li class="flex flex-col">champange bruce <br> <span class="text-center text-sm font-spot-regular">R&B</span></li>
+                  <li>radar</li>
+                </ul>
+              </div>
+            </section>
+            <section
+              class="hidden justify-center pt-spot-padding-100 pb-spot-gap-55 md:block"
             >
-              <li>Tid</li>
-              <li>artist</li>
-              <li>sted</li>
-            </ul>
-            <ul
-              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
-            >
-              <li>11:30</li>
-              <li>black tower</li>
-              <li>radar</li>
-            </ul>
-            <ul
-              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
-            >
-              <li>12:00</li>
-              <li>Dizzy Mizz Lizzy</li>
-              <li>radar</li>
-            </ul>
-            <ul
-              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
-            >
-              <li>14:15</li>
-              <li>Champagne Bruce</li>
-              <li>radar</li>
-            </ul>
+              <div class="mx-spot-margin-50 flex flex-col items-center">
+                <h3 class="text-center text-spot-xl font-spot-black">Lørdag</h3>
+                <ul
+                  class="flex w-2/3 justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular"
+                >
+                  <li>Tid</li>
+                  <li>artist</li>
+                  <li>sted</li>
+                </ul>
+                <ul
+                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
+                >
+                  <li>13:45</li>
+                  <li class="flex flex-col">ameli dot <br> <span class="text-center text-sm font-spot-regular">pop</span></li>
+                  <li>rader</li>
+                </ul>
+                <ul
+                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
+                >
+                  <li>16:00</li>
+                  <li class="flex flex-col">ava <br> <span class="text-center text-sm font-spot-regular">r&b</span></li>
+                  <li>radar</li>
+                </ul>
+              </div>
+            </section>
           </div>
-        </section>
-        <section
-          class="hidden justify-center pt-spot-padding-100 pb-spot-gap-55 md:block"
-        >
-          <div class="mx-spot-margin-50 flex flex-col items-center">
-            <h3 class="text-center text-spot-xl font-spot-black">Lørdag</h3>
-            <ul
-              class="flex w-2/3 justify-between border-b-spot-3 border-spot-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular"
-            >
-              <li>Tid</li>
-              <li>artist</li>
-              <li>sted</li>
-            </ul>
-            <ul
-              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
-            >
-              <li>13:45</li>
-              <li>Amili dot</li>
-              <li>rader</li>
-            </ul>
-            <ul
-              class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold"
-            >
-              <li>16:00</li>
-              <li>ava</li>
-              <li>radar</li>
-            </ul>
-          </div>
-        </section>
-      </div>
+       </div>
+      
     </main>
-    <footer class="bg-spot-black">
+    <footer class="bg-spot-black relative -z--spot-index-level-2">
       <div
         class="flex flex-col border-b-spot-2 border-spot-dark-gray p-spot-padding-50 pb-spot-margin-60 md:flex-row md:items-center md:justify-between"
       >
@@ -420,7 +426,7 @@
             size="30"
           />
           <button
-            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
+            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black active:scale-95"
           >
             Tilmeld
           </button>
