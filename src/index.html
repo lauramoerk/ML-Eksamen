@@ -7,155 +7,289 @@
     <link rel="stylesheet" href="https://use.typekit.net/eue2tfn.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="googlebot" content="noindex, nofollow" />
-    <link rel="stylesheet" href="style.css">
-<script src="main.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
     <title>SPOT festival</title>
   </head>
   <body
     class="bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-  <header>
-    <section
-      class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
-    >
-      <div
-        class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+    <header>
+      <section
+        class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
-        <input
-          class="hidden h-6 border-none bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          placeholder="Søg..."
-        />
-        <img class="w-4 cursor-pointer" src="./img/svg/search.svg" alt="søgeikon" />
-      </div>
-      <h3 class="link p-0 no-underline">Hjælp</h3>
-    </section>
-    <div
-      class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
-    >
-      <div class="w-full">
-        <div class="flex justify-between lg:justify-start w-full">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+        <div
+          class="flex w-fit flex-row bg-spot-black pr-spot-padding-8 md:border-spot-2 md:border-spot-white"
+        >
+          <input
+            class="hidden h-6 border-none bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
+            type="text"
+            name="searchBar"
+            id="searchBar"
+            placeholder="Søg..."
+          />
+          <img
+            class="w-4 cursor-pointer"
+            src="./img/svg/search.svg"
+            alt="søgeikon"
+          />
+        </div>
+        <h3 class="link p-0 no-underline">Hjælp</h3>
+      </section>
+      <div
+        class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
+      >
+        <div class="w-full">
+          <div class="flex w-full justify-between lg:justify-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </label>
+              <ul
+                tabindex="0"
+                class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu menu-compact mt-3 w-44 bg-spot-black p-2 shadow"
-            >
-              <li><a href="lineup.html" class="link no-underline">lineup</a></li>
-              <li><a href="program.html" class="link no-underline">program</a></li>
-              <li><a href="billetter.html" class="link no-underline">billetter</a></li>
-              <li tabindex="0">
-                <a href="om.html" class="justify-between">
-                  Om
-                  <svg
-                    class="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
+                <li>
+                  <a href="lineup.html" class="link no-underline">lineup</a>
+                </li>
+                <li>
+                  <a href="program.html" class="link no-underline">program</a>
+                </li>
+                <li>
+                  <a href="billetter.html" class="link no-underline"
+                    >billetter</a
                   >
-                    <path
-                      d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                    />
-                  </svg>
-                </a>
-                <ul class="bg-spot-black p-2">
-                  <li><a href="om.html" class="link no-underline">Spot</a></li>
-                  <li><a href="frivillige.html" class="link no-underline">Frivillige</a></li>
-                  <li><a href="faq.html" class="link no-underline">FAQ</a></li>
-                  <li><a href="ansog.html" class="link no-underline">Ansøg</a></li>
-                </ul>
-              </li>
-              <li><a class="link no-underline">Spot+</a></li>
-            </ul>
+                </li>
+                <li tabindex="0">
+                  <a href="om.html" class="justify-between">
+                    Om
+                    <svg
+                      class="fill-current"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
+                      />
+                    </svg>
+                  </a>
+                  <ul class="bg-spot-black p-2">
+                    <li>
+                      <a href="om.html" class="link no-underline">Spot</a>
+                    </li>
+                    <li>
+                      <a href="frivillige.html" class="link no-underline"
+                        >Frivillige</a
+                      >
+                    </li>
+                    <li>
+                      <a href="faq.html" class="link no-underline">FAQ</a>
+                    </li>
+                    <li>
+                      <a href="ansog.html" class="link no-underline">Ansøg</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a class="link no-underline">Spot+</a></li>
+              </ul>
+            </div>
+            <a
+              href="index.html"
+              class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+            >
+              <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
+              <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
+                Spot Festival
+              </h3>
+            </a>
           </div>
-          <a
-            class="btn btn-ghost flex items-center justify-between gap-spot-gap-10 text-xl normal-case"
+        </div>
+        <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
+          <ul
+            class="menu menu-horizontal flex gap-spot-gap-15 rounded-none px-1"
           >
-            <img class="w-10" src="./img/logo-white.png" alt="spot logo" />
-            <h3 class="hidden font-spot-aktiv-grotesk-ex uppercase md:block">
-              Spot Festival
-            </h3>
-          </a>
+            <li>
+              <a href="lineup.html" class="link p-0 no-underline">lineup</a>
+            </li>
+            <li>
+              <a href="program.html" class="link p-0 no-underline">program</a>
+            </li>
+            <li>
+              <a href="billetter.html" class="link p-0 no-underline"
+                >billetter</a
+              >
+            </li>
+            <li tabindex="0">
+              <a href="om.html" class="p-0">
+                Om
+                <svg
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
+                  />
+                </svg>
+              </a>
+              <ul class="bg-spot-black p-2">
+                <li>
+                  <a href="om.html" class="link mb-2 p-0 no-underline"
+                    >Om Spot</a
+                  >
+                </li>
+                <li>
+                  <a href="frivillige.html" class="link p-0 no-underline"
+                    >Frivillige</a
+                  >
+                </li>
+                <li>
+                  <a href="faq.html" class="link p-0 no-underline">FAQ</a>
+                </li>
+                <li>
+                  <a href="ansog.html" class="link p-0 no-underline">Ansøg</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
+          </ul>
         </div>
       </div>
-      <div class="navbar-end hidden md:mr-spot-margin-10 lg:flex">
-        <ul class="menu menu-horizontal flex gap-spot-gap-15 px-1 rounded-none">
-          <li><a href="lineup.html" class="link p-0 no-underline">lineup</a></li>
-          <li><a href="program.html" class="p-0 link no-underline ">program</a></li>
-          <li><a href="billetter.html" class="link p-0 no-underline">billetter</a></li>
-          <li tabindex="0">
-            <a href="om.html" class="p-0">
-              Om
-              <svg
-                class="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
+    </header>
+
+    <main>
+      <div id="cookieboks"
+        class="fixed left-0 z-10 flex flex-col border-spot-5 border-spot-black bg-spot-white text-spot-black md:top-96 md:w-1/2 p-spot-padding-30"
+      >
+        <p class="normal-case">
+          SPOT-festival.dk bruger første- og tredjepartcookies til at forbedre
+          din brugeroplevelse, registrere trafik, kilder og performance samt til
+          at lave relevant, personaliseret marketing. Du kan få flere
+          oplysninger om cookies og dine muligheder for at styre dem i vores
+          <a href="#" class="text-spot-black underline"
+            >cookie- og persondatapolitik.</a
+          >
+        </p>
+        <div class="flex flex-col sm:flex-row my-spot-margin-35 gap-spot-gap-25 justify-evenly items-center">
+          <div class="mt-spot-margin-15 flex flex-col gap-spot-gap-15 ">
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" value="" class="peer sr-only" checked />
+              <div
+                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
+              ></div>
+              <span class="ml-3 text-sm font-spot-bold">nødvendige</span>
+            </label>
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" value="" class="peer sr-only" />
+              <div
+                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-spot-white after:bg-spot-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
+              ></div>
+              <span class="ml-3 text-sm font-spot-bold dark:text-gray-300"
+                >Præferencer</span
               >
-                <path
-                  d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"
-                />
-              </svg>
-            </a>
-            <ul class="bg-spot-black p-2">
-              <li><a href="om.html" class="link mb-2 p-0 no-underline">Om Spot</a></li>
-              <li><a href="frivillige.html" class="link p-0 no-underline">Frivillige</a></li>
-              <li><a href="faq.html" class="link p-0 no-underline">FAQ</a></li>
-              <li><a href="ansog.html" class="link p-0 no-underline">Ansøg</a></li>
-            </ul>
-          </li>
-          <li><a href="#" class="link p-0 no-underline">Spot+</a></li>
-        </ul>
+            </label>
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" value="" class="peer sr-only" />
+              <div
+                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-spot-white after:bg-spot-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
+              ></div>
+              <span class="ml-3 text-sm font-spot-bold dark:text-gray-300"
+                >Statistik</span
+              >
+            </label>
+            <label class="relative inline-flex cursor-pointer items-center">
+              <input type="checkbox" value="" class="peer sr-only" />
+              <div
+                class="peer h-6 w-11 rounded-full bg-gray-200 after:absolute after:top-0.5 after:left-[2px] after:h-5 after:w-5 after:rounded-full after:border after:border-spot-white after:bg-spot-white after:transition-all after:content-[''] peer-checked:bg-spot-accent-2 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-4 peer-focus:ring-spot-white"
+              ></div>
+              <span class="ml-3 text-sm font-spot-bold dark:text-gray-300"
+                >marketing</span
+              >
+            </label>
+          </div>
+          <div class="flex flex-col gap-spot-gap-10">
+            <button id="tilladudvalgte"
+              class="w-fit self-center text-spot-xs border-spot-3 border-spot-black bg-spot-black py-spot-padding-10 px-spot-padding-20 font-spot-xbold uppercase hover:bg-spot-white hover:text-spot-black text-spot-white"
+            >
+              tillad alle
+            </button>
+            <button id="tilladalle"
+              class="w-fit self-center underlined border-b-spot-2 border-spot-black font-spot-xbold text-spot-xs pt-spot-padding-10 uppercase"
+            >
+              Tillad udvalgte
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </header>
+      <div
+        class="grid grid-rows-[25%,75%] overflow-hidden md:h-screen md:grid-rows-[40%,60%]"
+      >
+        <section class="flex items-center">
+          <img class="" src="./img/svg/spot.svg" alt="SPOT TEKST SVG" />
+        </section>
 
-    <main >
-<div class="md:h-screen grid grid-rows-[25%,75%] md:grid-rows-[40%,60%] overflow-hidden">
-   <section class=" flex items-center ">
-    <img class=""   src="./img/svg/spot.svg" alt="SPOT TEKST SVG">
-  </section>
-
-  <div class="flex flex-col  md:flex-row">
- 
-    <div class="grid grid-rows-2 h-[60%] md:w-[60%] md:h-auto">
-      <a class="h-full" href="billetter.html">
-   <section class=" bg-spot-accent-1 flex flex-row items-center justify-between gap-spot-gap-10 px-spot-padding-15 h-full ">
-    <h1 class="font-spot-aktiv-grotesk-ex font-spot-bold text-spot text-spot-xl md:text-spot-xxxl text-spot-black ">Billetter</h1>
-    <img class="w-[70px] md:w-auto py-spot-padding-8 px-spot-padding-10  " src="img/svg/pilsort.svg" alt="">
-   </section>
-  </a>
-  <a href="program.html">
-   <section class=" bg-spot-accent-2 flex flex-row items-center justify-between gap-spot-gap-10 px-spot-padding-15 h-full">
-    <h1 class="font-spot-aktiv-grotesk-ex font-spot-bold text-spot text-spot-xl md:text-spot-xxxl text-left text-spot-black">Program</h1>
-    <img class="w-[70px] md:w-auto py-spot-padding-8 px-spot-padding-10" src="img/svg/pilsort.svg" alt="">
-   </section></a>
-    </div>   
-    <section class="bg-spot-white font-spot-bold flex flex-col justify-around -order-1 h-[40%] md:w-[40%] md:order-1 md:h-auto">
-      <img class="h-[100%] md:h-auto py-spot-padding-8 px-spot-padding-10  " src="./img/svg/2023.svg" alt="">
-    </section>
-  </div> 
-
-</div>
+        <div class="flex flex-col md:flex-row">
+          <div class="grid h-[60%] grid-rows-2 md:h-auto md:w-[60%]">
+            <a class="h-full" href="billetter.html">
+              <section
+                class="flex h-full flex-row items-center justify-between gap-spot-gap-10 bg-spot-accent-1 px-spot-padding-15"
+              >
+                <h1
+                  class="text-spot font-spot-aktiv-grotesk-ex text-spot-xl font-spot-bold text-spot-black md:text-spot-xxxl"
+                >
+                  Billetter
+                </h1>
+                <img
+                  class="w-[70px] py-spot-padding-8 px-spot-padding-10 md:w-auto"
+                  src="img/svg/pilsort.svg"
+                  alt=""
+                />
+              </section>
+            </a>
+            <a href="program.html">
+              <section
+                class="flex h-full flex-row items-center justify-between gap-spot-gap-10 bg-spot-accent-2 px-spot-padding-15"
+              >
+                <h1
+                  class="text-spot text-left font-spot-aktiv-grotesk-ex text-spot-xl font-spot-bold text-spot-black md:text-spot-xxxl"
+                >
+                  Program
+                </h1>
+                <img
+                  class="w-[70px] py-spot-padding-8 px-spot-padding-10 md:w-auto"
+                  src="img/svg/pilsort.svg"
+                  alt=""
+                /></section
+            ></a>
+          </div>
+          <section
+            class="-order-1 flex h-[40%] flex-col justify-around bg-spot-white font-spot-bold md:order-1 md:h-auto md:w-[40%]"
+          >
+            <img
+              class="h-[100%] py-spot-padding-8 px-spot-padding-10 md:h-auto"
+              src="./img/svg/2023.svg"
+              alt=""
+            />
+          </section>
+        </div>
+      </div>
     </main>
     <footer class="bg-spot-black">
       <div
@@ -181,7 +315,7 @@
             size="30"
           />
           <button
-            class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white border-spot-white hover:text-spot-black"
+            class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black"
           >
             Tilmeld
           </button>
@@ -321,5 +455,6 @@
         </p>
       </section>
     </footer>
+    <script src="cookieboks.js"></script>
   </body>
 </html>
