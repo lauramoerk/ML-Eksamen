@@ -14,7 +14,16 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "src/index.html"),
-        program: resolve(__dirname, "src/program.html")
+        program: resolve(__dirname, "src/program.html"),
+        sitemap: resolve(__dirname, "src/sitemap.html"),
+        om: resolve(__dirname, "src/om.html"),
+        nyheder: resolve(__dirname, "src/nyheder.html"),
+        lineup: resolve(__dirname, "src/lineup.html"),
+        frivillig: resolve(__dirname, "src/frivillig.html"),
+        faq: resolve(__dirname, "src/faq.html"),
+        billetter: resolve(__dirname, "src/billetter.html"),
+        artist: resolve(__dirname, "src/artist.html"),
+        ansog: resolve(__dirname, "src/ansog.html"),
         // about: resolve(__dirname, "src/about.html"),
       },
     },
