@@ -34,7 +34,7 @@
       class="spot-padding-8 navbar bg-spot-black text-spot-sm text-spot-white"
     >
       <div class="w-full">
-        <div class="flex w-full">
+        <div class="flex justify-between lg:justify-start w-full">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg
@@ -126,42 +126,52 @@
       </div>
     </div>
   </header>
-    <main>
-      <h1 class="text-center text-spot-mega md:text-spot-display font-spot-display">Billetter</h1>
-      <a href="#">
-        <section class="flex border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 mt-spot-margin-35 justify-between">
-          <div class="">
-            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">Partout billet</p>
-            <div id="empty" ></div>
-            <p class="py-spot-padding-10 text-spot-md font-spot-black">715,-</p>
-          </div>
-          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
-        </section>
-        <section class="flex border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 justify-between">
-          <div class="">
-            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">ungdom (u25)</p>
-            <div id="empty" ></div>
-            <p class="py-spot-padding-10 text-spot-md font-spot-black">udsolgt</p>
-          </div>
-          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
-        </section>
-        <section class="flex border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 justify-between">
-          <div class="">
-            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">fredag</p>
-            <div id="empty" ></div>
-            <p class="py-spot-padding-10 text-spot-md font-spot-black">480,-</p>
-          </div>
-          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
-        </section>
-        <section class="flex border-t-spot-2 border-b-spot-2 py-spot-padding-10 mx-spot-margin-25 justify-between">
-          <div class="">
-            <p class="py-spot-padding-10 font-spot-regular text-spot-sm">lørdag</p>
-            <div id="empty" ></div>
-            <p class="py-spot-padding-10 text-spot-md font-spot-black">480,-</p>
-          </div>
-          <div><img class="h-7" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
-        </section>
-      </a>
+    <main class="mx-spot-margin-50">
+      <h1 class="text-center md:text-left font-spot-display text-spot-mega md:text-spot-display">Billetter</h1>
+      
+        <div class="flex flex-col md:items-center">
+          <section class=" border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 mt-spot-margin-35 md:w-2/3">
+            <a href="https://billet.spotfestival.dk/72876/SPOT_Festival_2022" target="_blank" class="flex justify-between">
+              <div class="">
+                <p class="py-spot-padding-10 font-spot-regular text-spot-sm">Partout billet</p>
+                <div id="empty" ></div>
+                <p class="py-spot-padding-10 text-spot-md font-spot-black">715,-</p>
+              </div>
+              <div><img class="h-12 md:h-16" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+            </a>
+          </section>
+          <section class="border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 md:w-2/3">
+            <a href="https://billet.spotfestival.dk/72876/SPOT_Festival_2022" target="_blank" class="flex justify-between">
+              <div class="">
+                <p class="py-spot-padding-10 font-spot-regular text-spot-sm">ungdom (u25)</p>
+                <div id="empty" ></div>
+                <p class="py-spot-padding-10 text-spot-md font-spot-black">udsolgt</p>
+              </div>
+              <div><img class="h-12 md:h-16" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+            </a>
+          </section>
+          <section class="border-t-spot-2 py-spot-padding-10 mx-spot-margin-25 md:w-2/3">
+            <a href="https://billet.spotfestival.dk/72876/SPOT_Festival_2022" target="_blank" class="flex justify-between">
+              <div class="">
+                <p class="py-spot-padding-10 font-spot-regular text-spot-sm">fredag</p>
+                <div id="empty" ></div>
+                <p class="py-spot-padding-10 text-spot-md font-spot-black">480,-</p>
+              </div>
+              <div><img class="h-12 md:h-16" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+            </a>
+          </section>
+          <section class=" border-t-spot-2 border-b-spot-2 py-spot-padding-10 mx-spot-margin-25 md:w-2/3">
+            <a href="https://billet.spotfestival.dk/72876/SPOT_Festival_2022" target="_blank" class="flex justify-between">
+              <div class="">
+                <p class="py-spot-padding-10 font-spot-regular text-spot-sm">lørdag</p>
+                <div id="empty" ></div>
+                <p class="py-spot-padding-10 text-spot-md font-spot-black">480,-</p>
+              </div>
+              <div><img class="h-12 md:h-16" src="img/svg/pil.svg" alt="icon pil, leder videre til anden side"></div>
+            </a>
+          </section>
+        </div>
+      
     </main>
     <footer class="bg-spot-black">
       <div
