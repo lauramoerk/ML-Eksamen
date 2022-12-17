@@ -289,17 +289,31 @@
               </section>
             </div>
             <div class="flex flex-col md:flex-row">
-              <img
-                class="mt-spot-margin-55 mb-spot-margin-40 sm:hidden"
-                src="img/map-ver.png"
-                alt="Kort over Århus venues"
-              />
-              <img
-                class="mt-spot-margin-55 mb-spot-margin-40 hidden sm:block md:mt-spot-margin-20 md:max-w-sm md:h-fit lg:max-w-xl"
-                src="img/map-hor.png"
-                alt="Kort over Århus venues"
-              />
-              <!-- <iframe src="https://snazzymaps.com/embed/443698" width="100%" height="600px" style="border:none;"></iframe> -->
+              <picture class="mt-spot-margin-55 mb-spot-margin-40 sm:hidden">
+                <source
+                  class=""
+                  srcset="img/map-ver.avif"
+                  type="image/avif"
+                />
+                <img
+                  class=""
+                  src="img/map-ver.webp"
+                  alt="koncertbillede"
+                />
+              </picture>
+              <picture class="mt-spot-margin-55 mb-spot-margin-40 hidden sm:block">
+                <source
+                  class=""
+                  srcset="img/map-hor.avif"
+                  type="image/avif"
+                />
+                <img
+                  class="md:mt-spot-margin-20 md:max-w-sm md:h-fit lg:max-w-xl"
+                  src="img/map-hor.webp"
+                  alt="koncertbillede"
+                />
+              </picture>
+             
             </div>
           </div>
           <div>
@@ -579,10 +593,6 @@
         </p>
       </section>
     </footer>
-    <script
-      async
-      defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNaiTWs3gowcf0kZR6Bs_2C_76qHrQSyw&callback=initMap"
-    ></script>
+    
   </body>
 </html>
