@@ -21,7 +21,7 @@ module.exports = {
       },
       fontFamily: {
         "spot-display": ["dimensions, sans-serif"],
-        "--font-family-aktiv-grotesk": ["aktiv-grotesk, sans-serif"],
+        "spot-aktiv-grotesk": ["aktiv-grotesk, sans-serif"],
         "spot-aktiv-grotesk-thin": ["aktiv-grotesk-thin, sans-serif"],
         "spot-aktiv-grotesk-condensed": ["aktiv-grotesk-condensed, sans-serif"],
         "spot-aktiv-grotesk-ex": ["aktiv-grotesk-extended, sans-serif"],
