@@ -10,9 +10,10 @@
     <title>SPOT festival</title>
   </head>
   <body
-    class=" bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white relative"
+    class="relative bg-spot-black font-spot-aktiv-grotesk-ex uppercase text-spot-white"
   >
-    <header class="fixed w-full bg-spot-black -z--spot-index-level-4">
+  
+    <header class="fixed -z--spot-index-level-4 w-full bg-spot-black">
       <section
         class="flex flex-row items-center justify-end gap-x-spot-gap-5 border-b-2 border-spot-dark-gray pt-2 pr-spot-padding-8 pb-spot-padding-8 text-spot-sm md:pt-spot-padding-8"
       >
@@ -176,7 +177,9 @@
                   <a href="faq.html" class="link mb-2 p-0 no-underline">FAQ</a>
                 </li>
                 <li>
-                  <a href="ansog.html" class="link mb-2 p-0 no-underline">Ansøg</a>
+                  <a href="ansog.html" class="link mb-2 p-0 no-underline"
+                    >Ansøg</a
+                  >
                 </li>
               </ul>
             </li>
@@ -186,315 +189,384 @@
       </div>
     </header>
     <main class="relative mx-spot-margin-50">
-      
-      <section class="noisy w-full fixed -z--spot-index-level-1"></section>
-       <div class=" pt-spot-margin-100 relative -z--spot-index-level-3 w-full">
-          <h1
-            class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
-          >
-            program
-          </h1>
-          <div
-            class="flex flex-col md:flex-row md:gap-spot-gap-65 lg:justify-center"
-          >
-            <div class="mt-spot-margin-30">
-              <section>
-                <h4 class="mb-spot-margin-25 text-spot-sm">
-                  Søg efter artist eller sted
-                </h4>
-                <div
-                  class="flex w-fit flex-row justify-between border-spot-1 border-spot-white bg-spot-black py-spot-padding-8 pr-spot-padding-8 md:w-full"
-                >
+      <section class="noisy fixed -z--spot-index-level-1 w-full"></section>
+      <div class="relative -z--spot-index-level-3 w-full pt-spot-margin-100">
+        <h1
+          class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
+        >
+          program
+        </h1>
+        <div
+          class="flex flex-col md:flex-row md:gap-spot-gap-65 lg:justify-center"
+        >
+          <div class="mt-spot-margin-30">
+            <section>
+              <h4 class="mb-spot-margin-25 text-spot-sm">
+                Søg efter artist eller sted
+              </h4>
+              <div
+                class="flex w-fit flex-row justify-between border-spot-1 border-spot-white bg-spot-black py-spot-padding-8 pr-spot-padding-8 md:w-full"
+              >
+                <input
+                  class="h-6 w-full border-none bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
+                  type="text"
+                  name="searchBar"
+                  id="searchBar"
+                  placeholder="Søg artist eller sted..."
+                />
+                <img class="w-4" src="./img/svg/search.svg" alt="søgeikon" />
+              </div>
+            </section>
+            <section class="mt-spot-margin-40 mb-spot-margin-40">
+              <h4 class="mb-spot-margin-25 text-spot-sm">
+                Søg efter tidspunkt
+              </h4>
+              <span class="multi-range">
+                <div class="flex w-[250px] justify-between text-spot-xs">
+                  <p>11:00</p>
+                  <p>02:00</p>
+                </div>
+                <div>
                   <input
-                    class="h-6 border-none w-full bg-spot-black text-spot-sm placeholder:text-spot-light-gray md:block"
-                    type="text"
-                    name="searchBar"
-                    id="searchBar"
-                    placeholder="Søg artist eller sted..."
+                    class="rangething"
+                    type="range"
+                    min="0"
+                    max="50"
+                    value="5"
+                    id="lower"
                   />
-                  <img class="w-4" src="./img/svg/search.svg" alt="søgeikon" />
+                  <input
+                    class="rangething"
+                    type="range"
+                    min="0"
+                    max="50"
+                    value="45"
+                    id="upper"
+                  />
                 </div>
-              </section>
-              <section class="mt-spot-margin-40 mb-spot-margin-40">
-                <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter tidspunkt</h4>
-                <span class="multi-range">
-                  <div class="flex w-[250px] justify-between text-spot-xs">
-                    <p>11:00</p>
-                    <p>02:00</p>
-                  </div>
-                  <div>
-                    <input
-                      class="rangething"
-                      type="range"
-                      min="0"
-                      max="50"
-                      value="5"
-                      id="lower"
-                    />
-                    <input
-                      class="rangething"
-                      type="range"
-                      min="0"
-                      max="50"
-                      value="45"
-                      id="upper"
-                    />
-                  </div>
-                </span>
-              </section>
-              <section>
-                <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter genre</h4>
-                <div class="flex flex-wrap gap-spot-gap-5">
-                  
-                  <button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95"
-                  >
-                    pop
-                  </button>
-                  <button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95"
-                  >
-                    rock
-                  </button>
-                  <button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95"
-                  >
-                    reggae
-                  </button>
-                  <button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95"
-                  >
-                    electronic
-                  </button>
-                  <button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95"
-                  >
-                    soul</button
-                  ><button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95  focus:bg-spot-white focus:text-spot-black focus:scale-95"
-                  >
-                    R&B
-                  </button>
-                  <button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95"
-                  >
-                    country
-                  </button>
-                  <button
-                    class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95 "
-                  >
-                    andre genre
-                  </button>
-                </div>
-              </section>
-            </div>
-            <div class="flex flex-col md:flex-row">
-              <picture class="mt-spot-margin-55 mb-spot-margin-40 sm:hidden">
-                <source
-                  class=""
-                  srcset="img/map-ver.avif"
-                  type="image/avif"
-                />
-                <img
-                  class=""
-                  src="img/map-ver.webp"
-                  alt="koncertbillede"
-                />
-              </picture>
-              <picture class="mt-spot-margin-55 mb-spot-margin-40 hidden sm:block">
-                <source
-                  class=""
-                  srcset="img/map-hor.avif"
-                  type="image/avif"
-                />
-                <img
-                  class="md:mt-spot-margin-20 md:max-w-sm md:h-fit lg:max-w-xl"
-                  src="img/map-hor.webp"
-                  alt="koncertbillede"
-                />
-              </picture>
-             
-            </div>
+              </span>
+            </section>
+            <section>
+              <h4 class="mb-spot-margin-25 text-spot-sm">Søg efter genre</h4>
+              <div class="flex flex-wrap gap-spot-gap-5">
+                <button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  pop
+                </button>
+                <button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  rock
+                </button>
+                <button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  reggae
+                </button>
+                <button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  electronic
+                </button>
+                <button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  soul</button
+                ><button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  R&B
+                </button>
+                <button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  country
+                </button>
+                <button
+                  class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-8 px-spot-padding-15 text-spot-xs font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+                >
+                  andre genre
+                </button>
+              </div>
+            </section>
           </div>
-          <div>
-            <h3
-              class="my-spot-margin-30 text-center text-spot-lg font-spot-black md:text-spot-xxl font-spot-aktiv-grotesk-ex"
+          <div class="flex flex-col md:flex-row">
+            <picture class="mt-spot-margin-55 mb-spot-margin-40 sm:hidden">
+              <source class="" srcset="img/map-ver.avif" type="image/avif" />
+              <img class="" src="img/map-ver.webp" alt="koncertbillede" />
+            </picture>
+            <picture
+              class="mt-spot-margin-55 mb-spot-margin-40 hidden sm:block"
             >
-              Godsbanen
-            </h3>
-<p class="text-center mb-spot-margin-25 text-spot-sm">sorter efter dag</p>
+              <source class="" srcset="img/map-hor.avif" type="image/avif" />
+              <img
+                class="md:mt-spot-margin-20 md:h-fit md:max-w-sm lg:max-w-xl"
+                src="img/map-hor.webp"
+                alt="koncertbillede"
+              />
+            </picture>
+          </div>
+        </div>
+        <div>
+          <h3
+            class="my-spot-margin-30 text-center font-spot-aktiv-grotesk-ex text-spot-lg font-spot-black md:text-spot-xxl"
+          >
+            Godsbanen
+          </h3>
+          <p class="mb-spot-margin-25 text-center text-spot-sm">
+            sorter efter dag
+          </p>
 
-            <div class="flex flex-row justify-center gap-spot-gap-25 ">
-              <a href="#fredagprogram"
-                class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95 border-spot-white uppercase"
-              >
-                fredag
-              </a>
-              <a href="#lørdagprogram"
-                class="w-fit self-center border-spot-3 py-spot-padding-10 px-spot-padding-20 font-spot-bold hover:bg-spot-white hover:text-spot-black active:scale-95 focus:bg-spot-white focus:text-spot-black focus:scale-95 border-spot-white uppercase"
-              >
-                lørdag
-              </a>
-            </div>
-    
-            <section class="flex flex-col md:hidden pb-spot-padding-50">
+          <div class="flex flex-row justify-center gap-spot-gap-25">
+            <a
+              href="#fredagprogram"
+              class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+            >
+              fredag
+            </a>
+            <a
+              href="#lørdagprogram"
+              class="w-fit self-center border-spot-3 border-spot-white py-spot-padding-10 px-spot-padding-20 font-spot-bold uppercase hover:bg-spot-white hover:text-spot-black focus:scale-95 focus:bg-spot-white focus:text-spot-black active:scale-95"
+            >
+              lørdag
+            </a>
+          </div>
+
+          <section class="flex flex-col pb-spot-padding-50 md:hidden">
+            <ul
+              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+            >
+              <li>11:30</li>
+              <li>Black tower</li>
+              <li>radar</li>
+            </ul>
+            <ul
+              class="mt-spot-margin-20 flex flex-row justify-between text-spot-sm"
+            >
+              <li>12:00</li>
+              <li class="w-20 text-center">Dizzy Mizz Lizzy</li>
+              <li>radar</li>
+            </ul>
+            <ul
+              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+            >
+              <li>13:15</li>
+              <li class="text-center">Casper Amba</li>
+              <li>radar</li>
+            </ul>
+            <ul
+              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+            >
+              <li>14:30</li>
+              <li>Emely</li>
+              <li>radar</li>
+            </ul>
+            <ul
+              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+            >
+              <li>15:00</li>
+              <li>carmie</li>
+              <li>radar</li>
+            </ul>
+            <ul
+              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+            >
+              <li>16:15</li>
+              <li>danefæ</li>
+              <li>radar</li>
+            </ul>
+          </section>
+          <section
+            id="fredagprogram"
+            class="hidden md:block md:pt-spot-padding-120"
+          >
+            <div class="mx-spot-margin-50 flex flex-col items-center">
+              <h3 class="text-center text-spot-lg font-spot-black">Fredag</h3>
               <ul
-                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+                class="flex w-2/3 justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
+              >
+                <li>Tid</li>
+                <li>artist</li>
+                <li>sted</li>
+              </ul>
+              <ul
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
               >
                 <li>11:30</li>
-                <li>Black tower</li>
+                <li class="flex flex-col">
+                  black tower <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >rock</span
+                  >
+                </li>
                 <li>radar</li>
               </ul>
               <ul
-                class="mt-spot-margin-20 flex flex-row justify-between text-spot-sm"
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
               >
                 <li>12:00</li>
-                <li class="w-20 text-center">Dizzy Mizz Lizzy</li>
+                <li class="flex flex-col">
+                  Dizzy Mizz lizzy<br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >rock</span
+                  >
+                </li>
                 <li>radar</li>
               </ul>
               <ul
-                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
               >
                 <li>13:15</li>
-                <li class="text-center">Casper Amba</li>
+                <li class="flex flex-col">
+                  casper Amba <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >R&B</span
+                  >
+                </li>
                 <li>radar</li>
               </ul>
               <ul
-                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
               >
                 <li>14:30</li>
-                <li>Emely</li>
+                <li class="flex flex-col">
+                  Emely <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >pop</span
+                  >
+                </li>
                 <li>radar</li>
               </ul>
               <ul
-                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
               >
                 <li>15:00</li>
-                <li>carmie</li>
+                <li class="flex flex-col">
+                  carmie <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >R&B</span
+                  >
+                </li>
                 <li>radar</li>
               </ul>
               <ul
-                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
               >
                 <li>16:15</li>
-                <li>danefæ</li>
+                <li class="flex flex-col">
+                  Danefæ <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >Rock</span
+                  >
+                </li>
                 <li>radar</li>
               </ul>
-            </section>
-            <section id="fredagprogram" class="hidden md:block md:pt-spot-padding-120 ">
-              <div class="mx-spot-margin-50 flex flex-col items-center">
-                <h3 class="text-center text-spot-lg font-spot-black">Fredag</h3>
-                <ul
-                  class="flex w-2/3 justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
-                >
-                  <li>Tid</li>
-                  <li>artist</li>
-                  <li>sted</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>11:30</li>
-                  <li class="flex flex-col">black tower <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">rock</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>12:00</li>
-                  <li class="flex flex-col">Dizzy Mizz lizzy<br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">rock</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>13:15</li>
-                  <li class="flex flex-col">casper Amba <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">R&B</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>14:30</li>
-                  <li class="flex flex-col">Emely <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">pop</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>15:00</li>
-                  <li class="flex flex-col">carmie <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">R&B</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>16:15</li>
-                  <li class="flex flex-col">Danefæ <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">Rock</span></li>
-                  <li>radar</li>
-                </ul>
-              </div>
-            </section>
-            <section id="lørdagprogram"
-              class="hidden justify-center pt-spot-padding-120 pb-spot-gap-55 md:block"
-            >
-              <div class="mx-spot-margin-50 flex flex-col items-center">
-                <h3  class="text-center text-spot-lg font-spot-black">Lørdag</h3>
-                <ul
-                  class="flex w-2/3 justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
-                >
-                  <li>Tid</li>
-                  <li>artist</li>
-                  <li>sted</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>13:45</li>
-                  <li class="flex flex-col">de jammerlige <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">jazz</span></li>
-                  <li>radar</li>
-                </ul>
-                
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>15:00</li>
-                  <li class="flex flex-col">ava <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">r&b</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>16:30</li>
-                  <li class="flex flex-col">ameli dot <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">pop</span></li>
-                  <li>rader</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>17:45</li>
-                  <li class="flex flex-col">first hate <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">pop</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>18:45</li>
-                  <li class="flex flex-col">Ericka Jane <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">pop</span></li>
-                  <li>radar</li>
-                </ul>
-                <ul
-                  class="my-spot-margin-30 flex w-2/3 flex-row justify-between text-spot-md font-spot-bold font-spot-aktiv-grotesk"
-                >
-                  <li>20:00</li>
-                  <li class="flex flex-col">FABRÄK <br> <span class="text-center text-sm font-spot-regular text-spot-light-gray italic">rock</span></li>
-                  <li>radar</li>
-                </ul>
-              </div>
-            </section>
-          </div>
-       </div>
-      
+            </div>
+          </section>
+          <section
+            id="lørdagprogram"
+            class="hidden justify-center pt-spot-padding-120 pb-spot-gap-55 md:block"
+          >
+            <div class="mx-spot-margin-50 flex flex-col items-center">
+              <h3 class="text-center text-spot-lg font-spot-black">Lørdag</h3>
+              <ul
+                class="flex w-2/3 justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
+              >
+                <li>Tid</li>
+                <li>artist</li>
+                <li>sted</li>
+              </ul>
+              <ul
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+              >
+                <li>13:45</li>
+                <li class="flex flex-col">
+                  de jammerlige <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >jazz</span
+                  >
+                </li>
+                <li>radar</li>
+              </ul>
+
+              <ul
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+              >
+                <li>15:00</li>
+                <li class="flex flex-col">
+                  ava <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >r&b</span
+                  >
+                </li>
+                <li>radar</li>
+              </ul>
+              <ul
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+              >
+                <li>16:30</li>
+                <li class="flex flex-col">
+                  ameli dot <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >pop</span
+                  >
+                </li>
+                <li>rader</li>
+              </ul>
+              <ul
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+              >
+                <li>17:45</li>
+                <li class="flex flex-col">
+                  first hate <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >pop</span
+                  >
+                </li>
+                <li>radar</li>
+              </ul>
+              <ul
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+              >
+                <li>18:45</li>
+                <li class="flex flex-col">
+                  Ericka Jane <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >pop</span
+                  >
+                </li>
+                <li>radar</li>
+              </ul>
+              <ul
+                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+              >
+                <li>20:00</li>
+                <li class="flex flex-col">
+                  FABRÄK <br />
+                  <span
+                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                    >rock</span
+                  >
+                </li>
+                <li>radar</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    
     </main>
     <footer class="relative -z--spot-index-level-2 bg-spot-black">
       <div
@@ -631,17 +703,17 @@
           <ul class="flex items-center gap-spot-gap-10 text-spot-xs">
             <li>
               <a href="https://www.facebook.com/spotfestival">
-                <img src="img/svg/facebook.svg" alt="facebook logo"
+                <img class="hover:scale-95" src="img/svg/facebook.svg" alt="facebook logo"
               /></a>
             </li>
             <li>
               <a href="https://www.youtube.com/@SPOTFestivaldk">
-                <img src="img/svg/youtube.svg" alt="youtube logo"
+                <img class="hover:scale-95" src="img/svg/youtube.svg" alt="youtube logo"
               /></a>
             </li>
             <li>
               <a href="https://www.instagram.com/spotfestival/">
-                <img src="img/svg/instagram.svg" alt="instagram logo"
+                <img class="hover:scale-95" src="img/svg/instagram.svg" alt="instagram logo"
               /></a>
             </li>
           </ul>
@@ -673,6 +745,7 @@
         </p>
       </section>
     </footer>
-    
+   
+
   </body>
 </html>
