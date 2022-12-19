@@ -7,9 +7,9 @@ denyCookie.addEventListener("click", fjernCookieBoks);
 
 function fjernCookieBoks() {
     cookieboks.classList.add("hidethis");
-    sessionStorage.setItem("fjernCookieBoks", true);
+    sessionStorage.setItem("fjerncookieboks", true);
 }
 
-if (sessionStorage.getItem("fjernCookieBoks")) {
+if (sessionStorage.getItem("fjerncookieboks")) {
     cookieboks.classList.add("hidethis");
 }
