@@ -6,10 +6,10 @@ acceptCookie.addEventListener("click", fjernCookieBoks);
 denyCookie.addEventListener("click", fjernCookieBoks);
 
 function fjernCookieBoks() {
-    cookieboks.classList.add("hidden");
+    cookieboks.classList.add("hidethis");
     sessionStorage.setItem("fjernCookieBoks", true);
 }
 
 if (sessionStorage.getItem("fjernCookieBoks")) {
-    cookieboks.classList.add("hidden");
+    cookieboks.classList.add("hidethis");
 }
