@@ -333,141 +333,156 @@
             </a>
           </div>
 
-          <section class="flex flex-col pb-spot-padding-50 md:hidden">
-            <ul
-              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
-            >
-              <li>11:30</li>
-              <li>Black tower</li>
-              <li>radar</li>
-            </ul>
-            <ul
-              class="mt-spot-margin-20 flex flex-row justify-between text-spot-sm"
-            >
-              <li>12:00</li>
-              <li class="w-20 text-center">Dizzy Mizz Lizzy</li>
-              <li>radar</li>
-            </ul>
-            <ul
-              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
-            >
-              <li>13:15</li>
-              <li class="text-center">Casper Amba</li>
-              <li>radar</li>
-            </ul>
-            <ul
-              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
-            >
-              <li>14:30</li>
-              <li>Emely</li>
-              <li>radar</li>
-            </ul>
-            <ul
-              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
-            >
-              <li>15:00</li>
-              <li>carmie</li>
-              <li>radar</li>
-            </ul>
-            <ul
-              class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
-            >
-              <li>16:15</li>
-              <li>danefæ</li>
-              <li>radar</li>
-            </ul>
-          </section>
+          <table class="table-fixed flex flex-col pb-spot-padding-50 md:hidden">
+            <thead>
+              <tr class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm">
+                <th>Song</th>
+                <th>Artist</th>
+                <th>Year</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr
+                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+              >
+                <td>11:30</td>
+                <td class="text-center">Black tower</td>
+                <td>radar</td>
+              </tr>
+              <tr
+                class="mt-spot-margin-20 flex flex-row justify-between text-spot-sm"
+              >
+                <td>12:00</td>
+                <td class="text-center">Dizzy Mizz Lizzy</td>
+                <td>radar</td>
+              </tr>
+              <tr
+                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+              >
+                <td>13:15</td>
+                <td class="text-center">Casper Amba</td>
+                <td>radar</td>
+              </tr>
+              <tr
+                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+              >
+                <td>14:30</td>
+                <td>Emely</td>
+                <td>radar</td>
+              </tr>
+              <tr
+                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+              >
+                <td>15:00</td>
+                <td>carmie</td>
+                <td>radar</td>
+              </tr>
+              <tr
+                class="mt-spot-margin-30 flex flex-row justify-between text-spot-sm"
+              >
+                <td>16:15</td>
+                <td>danefæ</td>
+                <td>radar</td>
+              </tr>
+            </tbody>
+          </table>
           <section
             id="fredagprogram"
             class="hidden md:block md:pt-spot-padding-120"
           >
             <div class="mx-spot-margin-50 flex flex-col items-center">
               <h3 class="text-center text-spot-lg font-spot-black">Fredag</h3>
-              <ul
-                class="flex w-2/3 justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
-              >
-                <li>Tid</li>
-                <li>artist</li>
-                <li>sted</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>11:30</li>
-                <li class="flex flex-col">
-                  black tower <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >rock</span
+              <table class="table-auto w-2/3 ">
+                <thead>
+                  <tr
+                    class="flex justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>12:00</li>
-                <li class="flex flex-col">
-                  Dizzy Mizz lizzy<br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >rock</span
+                    <th>Tid</th>
+                    <th>artist</th>
+                    <th>sted</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>13:15</li>
-                <li class="flex flex-col">
-                  casper Amba <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >R&B</span
+                    <td>11:30</td>
+                    <td class="flex flex-col">
+                      black tower <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >rock</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>14:30</li>
-                <li class="flex flex-col">
-                  Emely <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >pop</span
+                    <td>12:00</td>
+                    <td class="flex flex-col">
+                      Dizzy Mizz lizzy<br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >rock</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>15:00</li>
-                <li class="flex flex-col">
-                  carmie <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >R&B</span
+                    <td>13:15</td>
+                    <td class="flex flex-col">
+                      casper Amba <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >R&B</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>16:15</li>
-                <li class="flex flex-col">
-                  Danefæ <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >Rock</span
+                    <td>14:30</td>
+                    <td class="flex flex-col">
+                      Emely <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >pop</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
+                    <td>15:00</td>
+                    <td class="flex flex-col">
+                      carmie <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >R&B</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+                  >
+                    <td>16:15</td>
+                    <td class="flex flex-col">
+                      Danefæ <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >Rock</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
           <section
@@ -476,92 +491,99 @@
           >
             <div class="mx-spot-margin-50 flex flex-col items-center">
               <h3 class="text-center text-spot-lg font-spot-black">Lørdag</h3>
-              <ul
-                class="flex w-2/3 justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
-              >
-                <li>Tid</li>
-                <li>artist</li>
-                <li>sted</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>13:45</li>
-                <li class="flex flex-col">
-                  de jammerlige <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >jazz</span
+              <table class="table-auto w-2/3 ">
+                <thead>
+                  <tr
+                    class="flex justify-between border-b-spot-3 border-spot-dark-gray pb-spot-padding-10 pt-spot-padding-35 text-spot-base font-spot-regular text-spot-light-gray"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>15:00</li>
-                <li class="flex flex-col">
-                  ava <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >r&b</span
+                    <th>Tid</th>
+                    <th>artist</th>
+                    <th>sted</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>16:30</li>
-                <li class="flex flex-col">
-                  ameli dot <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >pop</span
+                    <td>13:45</td>
+                    <td class="flex flex-col">
+                      de jammerlige <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >jazz</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>rader</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>17:45</li>
-                <li class="flex flex-col">
-                  first hate <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >pop</span
+                    <td>15:00</td>
+                    <td class="flex flex-col">
+                      ava<br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >r&b</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>18:45</li>
-                <li class="flex flex-col">
-                  Ericka Jane <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >pop</span
+                    <td>16:30</td>
+                    <td class="flex flex-col">
+                      Ameli Dot<br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >pop</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
-              <ul
-                class="my-spot-margin-30 flex w-2/3 flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
-              >
-                <li>20:00</li>
-                <li class="flex flex-col">
-                  FABRÄK <br />
-                  <span
-                    class="text-center text-sm font-spot-regular italic text-spot-light-gray"
-                    >rock</span
+                    <td>17:45</td>
+                    <td class="flex flex-col">
+                      first hate <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >pop</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
                   >
-                </li>
-                <li>radar</li>
-              </ul>
+                    <td>18:45</td>
+                    <td class="flex flex-col">
+                      erika <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >pop</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                  <tr
+                    class="my-spot-margin-30 flex flex-row justify-between font-spot-aktiv-grotesk text-spot-md font-spot-bold"
+                  >
+                    <td>20:00</td>
+                    <td class="flex flex-col">
+                      fabräk <br />
+                      <span
+                        class="text-center text-sm font-spot-regular italic text-spot-light-gray"
+                        >Rock</span
+                      >
+                    </td>
+                    <td>radar</td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              
             </div>
           </section>
         </div>
