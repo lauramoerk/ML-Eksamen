@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://use.typekit.net/eue2tfn.css");
-@import url("https://use.typekit.net/eue2tfn.css");
+
 
 @layer base {
   .noisy::before {

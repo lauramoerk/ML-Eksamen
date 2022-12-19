@@ -187,39 +187,53 @@
     <main class="mx-spot-margin-50 py-spot-margin-100 relative">
       <section class="noisy w-full fixed -z--spot-index-level-1"></section>
       <section
-        class="flex flex-col gap-spot-gap-15 text-spot-xs normal-case  md:flex-row md:gap-spot-gap-25 md:text-spot-sm"
+        class="flex flex-col gap-spot-gap-15 text-spot-xs normal-case  md:flex-row md:gap-spot-gap-25 md:text-spot-sm md:w-full"
       >
-        <div>
+        <div class="md:w-2/3">
           <h1
-            class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display"
+            class="text-center font-spot-display text-spot-mega md:text-left md:text-spot-display "
           >
             Om spot
           </h1>
-          <div class="md:w-1/2 text-spot-sm md:text-spot-base normal-case font-spot-aktiv-grotesk">
-            <p>
-              SPOT - en musikalsk øjenåbner, SPOT har i mere end 20 år været en
-              formidlingsplatform for den danske og nordiske musik.
-            </p>
-  
-            <p>
-              SPOT afholder over 200 koncerter og events i løbet af festivalen, og
-              foruden hundredevis af optrædener fra de mest spændende
-              upcoming-bands og artister inkluderer festivalen også film, oplæg og
-              meget mere.
-            </p>
-  
-            <p>
-              Festivalen finder sted rundt omkring i Aarhus og på mange af byens
-              spillesteder og kulturinstitutioner - heriblandt Musikhuset Aarhus,
-              Godsbanen, DOKK1 samt på en række udendørsscener.
-            </p>
+          <div class=" text-spot-sm md:text-spot-base normal-case font-spot-aktiv-grotesk lg:w-2/3">
+            <div>
+              <p>
+                SPOT - en musikalsk øjenåbner, SPOT har i mere end 20 år været en
+                formidlingsplatform for den danske og nordiske musik.
+              </p>
+    
+              <p>
+                SPOT afholder over 200 koncerter og events i løbet af festivalen, og
+                foruden hundredevis af optrædener fra de mest spændende
+                upcoming-bands og artister inkluderer festivalen også film, oplæg og
+                meget mere.
+              </p>
+    
+              <p>
+                Festivalen finder sted rundt omkring i Aarhus og på mange af byens
+                spillesteder og kulturinstitutioner - heriblandt Musikhuset Aarhus,
+                Godsbanen, DOKK1 samt på en række udendørsscener.
+              </p>
+            </div>
+            <div class="pt-spot-padding-30">
+              <h3 class="text-spot-md font-spot-bold md:text-spot-lg uppercase font-spot-aktiv-grotesk-ex">Spot på midten</h3>
+              <p>SPOT på Midten er et projekt skabt for at sætte fokus på alle de talenter, der befolker de jyske egne i Region Midtjylland. Over en tre-årig periode skal vi - i tæt samarbejde med lokale aktører og arrangørforeninger for og af unge - afdække og understøtte det sprudlende udbud af unge, lokale musikere og arrangører, der holder kreativiteten i live på scenerne på tværs af regionen.<br> <a class="underline cursor-pointer hover:text-spot-accent-1" target="_blank" href="http://spotpaamidten.dk/">Læs mere om SPOT på midten her.</a></p>
+            </div>
           </div>
         </div>
-        <img
-          class="justify-center self-center"
-          src=""
-          alt="Plakat for spot 2023"
-        />
+        <picture class=" flex justify-center self-center w-1/2 md:w-1/3">
+          <source
+            class=""
+            srcset="img/spot2023plakat.avif"
+            type="image/avif"
+          />
+          <img
+            class="w-3/4"
+            src="img/spot2023plakat.webp"
+            alt="Billede af SPOTplakat for 2023"
+          />
+        </picture>
+        
       </section>
       <section
         class="mt-spot-margin-50 flex flex-col md:mt-spot-margin-120 md:flex-row justify-evenly"
@@ -399,7 +413,7 @@
           <label class="text-spot-sm" for="email">Email</label>
 
           <input
-            class="bg-spot-black text-spot-xs text-spot-white"
+            class="bg-spot-black text-spot-xs text-spot-white placeholder:text-spot-gray border-spot-gray"
             type="email"
             placeholder="Eksempel@minmail.dk"
             id="email"
