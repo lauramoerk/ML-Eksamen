@@ -24,7 +24,7 @@
   
 
   .hidethis {
-    display: none;
+    visibility: hidden;
   }
 
   .empty {
