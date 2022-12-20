@@ -26,7 +26,7 @@ export default defineConfig({
         ansog: resolve(__dirname, "src/ansog.html"),
         cookieboks: resolve(__dirname, "src/cookieboks.js"),
         mainjs: resolve(__dirname, "src/main.js"),
-        sitemapxml: resolve(__dirname, "src/sitemap.xml"),
+        
        
       },
     },
