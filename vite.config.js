@@ -24,7 +24,6 @@ export default defineConfig({
         billetter: resolve(__dirname, "src/billetter.html"),
         artist: resolve(__dirname, "src/artist.html"),
         ansog: resolve(__dirname, "src/ansog.html"),
-        sitemap: resolve(__dirname, "src/sitemap.html"),
         cookieboks: resolve(__dirname, "src/cookieboks.js"),
         mainjs: resolve(__dirname, "src/main.js"),
         sitemapxml: resolve(__dirname, "src/sitemap.xml"),
